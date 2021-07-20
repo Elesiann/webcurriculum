@@ -231,8 +231,13 @@ img {
 }
 
 .home__profession {
-  font-size: var(--normal-font-size);
+  font-size: var(--h2-font-size);
   margin-bottom: var(--mb-1);
+}
+
+.spare__time {
+  margin-top: -0.5rem;
+  font-size: 0.75rem;
 }
 
 .home__address {
@@ -264,4 +269,26 @@ img {
 .home__button-movil:hover {
   background-color: var(--text-color);
   color: var(--container-color);
+}
+
+/* ========== SOCIAL ========== */
+.social__container{
+  grid-template-columns: max-content;
+  gap: 1rem;
+}
+
+.social__link{
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.social__link:hover{
+  color: var(--title-color);
+}
+
+.social__icon{
+  font-size: 1.4rem;
+  margin-right: .25rem;
 }
