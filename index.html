@@ -164,13 +164,48 @@
                 <div class="education__time">
                   <span class="education__rounder"></span>
                   <!-- ERASE education__line AT THE END-->
-                  <span class="education__line"></span>
+                  <!-- <span class="education__line"></span> -->
                 </div>
                   <div class="education__data bd-grid-small">
                     <h3 class="education__title">Escolaridade</h3>
                     <span class="education__studies">Fundação Bradesco</span>
                     <span class="education__year">2007 - 2018</span>
                   </div>
+              </div>
+            </section>
+            <section class="skills__section" id="skills-section">
+              <div class="skills__container container">
+                <!--==================================-->
+                <p class="skills__skill-title">HTML</p>
+                <div class="skills__bar">
+                  <div class="skills__bar-front-html"></div>
+                </div>
+                <!--==================================-->
+                <p class="skills__skill-title">CSS</p>
+                <div class="skills__bar">
+                  <div class="skills__bar-front-css"></div>
+                </div>
+                <!--==================================-->
+                <p class="skills__skill-title">JavaScript</p>
+                <div class="skills__bar">
+                  <div class="skills__bar-front-js"></div>
+                </div>
+                <!--==================================-->
+                <p class="skills__skill-title">Sass</p>
+                <div class="skills__bar">
+                  <div class="skills__bar-front-sass"></div>
+                </div>
+                <!--==================================-->
+                <p class="skills__skill-title">React</p>
+                <div class="skills__bar">
+                  <div class="skills__bar-front-react"></div>
+                </div>
+                <!--==================================-->
+                <div class="skills__label">
+                  <span class="label">Básico</span>
+                  <span class="label">Intermediário</span>
+                  <span class="label">Avançado</span>
+                </div>
               </div>
             </section>
         </div>
@@ -184,5 +219,33 @@
 
     <!-- ===================================================== MAIN JS ===================================================== -->
     <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="/responsive-travel-website/assets/js/scrollreveal.min.js"></script>
+
+    <script>
+
+      ScrollReveal({
+        distance: "20px",
+        duration: 1500,
+        reset: true,
+      })
+
+      ScrollReveal().reveal(
+      `
+        .skills__bar-front-html, 
+        .skills__bar-front-css, 
+        .skills__bar-front-js, 
+        .skills__bar-front-sass, 
+        .skills__bar-front-react
+      `,
+      {
+        origin: "left",
+        interval: 200
+      }
+      )
+    </script>
+
   </body>
 </html>
