@@ -371,6 +371,7 @@ img {
   width: 100%;
   height: 1.5rem;
   margin-top: var(--mb-1);
+  overflow: hidden;
 }
 .skills__bar-front-html{
   display: block;
