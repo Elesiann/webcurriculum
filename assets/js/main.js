@@ -47,8 +47,26 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
+ScrollReveal({
+  distance: "500px",
+  duration: 1000,
+  reset: false,
+})
 
-ScrollReveal().reveal('.skills__section')
+ScrollReveal().reveal(
+`
+  .skills__bar-front-html, 
+  .skills__bar-front-css, 
+  .skills__bar-front-js, 
+  .skills__bar-front-sass, 
+  .skills__bar-front-react
+  
+`,
+{
+  origin: "left",
+  interval: 100
+}
+)
 
 
 
