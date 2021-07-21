@@ -46,3 +46,10 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
+
+
+ScrollReveal().reveal('.skills__section')
+
+
+
+
