@@ -93,7 +93,7 @@ img {
 
 /* ========================= CLASS CSS ========================= */
 .section {
-  padding: 1.5rem 0;
+  padding: 0.5rem 0;
 }
 
 .section-title {
@@ -104,6 +104,15 @@ img {
   letter-spacing: 0.35rem;
   text-align: center;
   margin-bottom: var(--mb-3);
+  margin-top: var(--mb-3);
+}
+
+.section-caption {
+  font-size: var(--h3-font-size);
+  color: var(--text-colorlight);
+  font-weight: var(--normal-font-size);
+  text-align: center;
+  margin-top: -1.5rem;
 }
 
 /* ========================= LAYOUT ========================= */
@@ -214,7 +223,7 @@ img {
 }
 
 .home__container {
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .home__data {
@@ -299,7 +308,7 @@ img {
 
 /* ========== PROFILE ========== */
 .profile__description {
-  text-align: center;
+  text-align: justify;
 }
 
 /* ========== EDUCATION ========== */
@@ -307,15 +316,18 @@ img {
   transform: rotate(-45deg);
 }
 
-.education__content {
+.education__content,
+.experience__content {
   display: flex;
 }
 
-.education__time {
+.education__time,
+.experience__time {
   padding-right: 1rem;
 }
 
-.education__rounder {
+.education__rounder,
+.experience__rounder {
   position: relative;
   display: block;
   width: 12px;
@@ -325,7 +337,8 @@ img {
   margin-top: 0.45rem;
 }
 
-.education__line {
+.education__line,
+.experience__line {
   display: block;
   width: 2px;
   height: 120%;
@@ -334,15 +347,18 @@ img {
   transform: translateY(7px, 0);
 }
 
-.education__data {
+.education__data,
+.experience__data {
   gap: 0.5rem;
 }
 
-.education__title {
+.education__title,
+.experience__title {
   font-size: var(--h2-font-size);
 }
 
-.education__studies {
+.education__studies,
+.experience__company {
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
@@ -352,11 +368,10 @@ img {
 }
 
 /* ================= SKILLS =================  */
-.skills__label{
+.skills__label {
   display: flex;
   justify-content: space-between;
   margin-top: var(--mb-3);
-  
 }
 .skills__skill-title {
   margin-top: var(--mb-2);
@@ -365,7 +380,7 @@ img {
   justify-content: center;
 }
 
-.skills__bar{
+.skills__bar {
   display: block;
   background-color: #e0e2df;
   width: 100%;
@@ -373,7 +388,7 @@ img {
   margin-top: var(--mb-1);
   overflow: hidden;
 }
-.skills__bar-front-html{
+.skills__bar-front-html {
   display: block;
   background-color: var(--text-color);
   width: 75%;
@@ -381,33 +396,52 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.skills__bar-front-css{
+.skills__bar-front-css {
   display: block;
   background-color: var(--text-color);
   width: 60%;
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
-.skills__bar-front-js{
+.skills__bar-front-js {
   display: block;
   background-color: var(--text-color);
   width: 40%;
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
-.skills__bar-front-sass{
+.skills__bar-front-sass {
   display: block;
   background-color: var(--text-color);
   width: 20%;
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
-.skills__bar-front-react{
+.skills__bar-front-react {
   display: block;
   background-color: var(--text-color);
   width: 15%;
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
-
-
+.skills__bar-front-photoshop {
+  display: block;
+  background-color: var(--text-color);
+  width: 78%;
+  height: 1.5rem;
+  margin-bottom: var(--mb-2);
+}
+.skills__bar-front-illustrator {
+  display: block;
+  background-color: var(--text-color);
+  width: 57%;
+  height: 1.5rem;
+  margin-bottom: var(--mb-2);
+}
+.skills__bar-front-office {
+  display: block;
+  background-color: var(--text-color);
+  width: 50%;
+  height: 1.5rem;
+  margin-bottom: var(--mb-2);
+}
