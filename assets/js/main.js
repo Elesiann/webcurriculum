@@ -62,7 +62,10 @@ ScrollReveal().reveal(
   .skills__bar-front-react,
   .skills__bar-front-photoshop,
   .skills__bar-front-illustrator,
-  .skills__bar-front-office
+  .skills__bar-front-office,
+  .skills__bar-front-portuguese,
+  .skills__bar-front-english,
+  .skills__bar-front-spanish
   
 `,
   {
