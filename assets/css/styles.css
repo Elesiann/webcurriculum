@@ -337,14 +337,21 @@ img {
   margin-top: 0.45rem;
 }
 
-.education__line,
-.experience__line {
+.education__line {
   display: block;
   width: 2px;
   height: 120%;
   background-color: var(--text-colorlight);
   margin-left: 0.3rem;
   transform: translateY(7px, 0);
+}
+
+.experience__line {
+  display: block;
+  width: 2px;
+  height: 110%;
+  background-color: var(--text-colorlight);
+  margin-left: .29rem;
 }
 
 .education__data,
@@ -444,4 +451,26 @@ img {
   width: 50%;
   height: 1.5rem;
   margin-bottom: var(--mb-2);
+}
+
+/* ================================== CERTIFICADOS ==================================  */
+.certificate__content {
+  text-align: center;
+}
+
+/* ================================== REFERENCIAS ==================================  */
+.references__content{
+  gap: 0.25rem;
+}
+
+.references__subtitle{
+  color: var(--text-colorlight);
+}
+
+.references__subtitle, .references__contact{
+  font-size: var(--smaller-font-size);
+}
+
+.references__title{
+  font-size: var(--h3-font-size);
 }
