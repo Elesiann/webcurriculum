@@ -51,23 +51,22 @@ ScrollReveal({
   distance: "500px",
   duration: 1000,
   reset: false,
-})
+});
 
 ScrollReveal().reveal(
-`
+  `
   .skills__bar-front-html, 
   .skills__bar-front-css, 
   .skills__bar-front-js, 
   .skills__bar-front-sass, 
-  .skills__bar-front-react
+  .skills__bar-front-react,
+  .skills__bar-front-photoshop,
+  .skills__bar-front-illustrator,
+  .skills__bar-front-office
   
 `,
-{
-  origin: "left",
-  interval: 100
-}
-)
-
-
-
-
+  {
+    origin: "left",
+    interval: 100,
+  }
+);
