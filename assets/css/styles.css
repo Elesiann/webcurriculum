@@ -308,7 +308,9 @@ img {
 
 /* ========== PROFILE ========== */
 .profile__description {
+  justify-content: center;
   text-align: justify;
+  
 }
 
 /* ========== EDUCATION ========== */
@@ -330,8 +332,8 @@ img {
 .experience__rounder {
   position: relative;
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   background-color: var(--text-colorlight);
   border-radius: 50%;
   margin-top: 0.45rem;
@@ -349,7 +351,7 @@ img {
 .experience__line {
   display: block;
   width: 2px;
-  height: 110%;
+  height: 105%;
   background-color: var(--text-colorlight);
   margin-left: 0.29rem;
 }
@@ -502,8 +504,8 @@ img {
 
 /* ================================== HOBBIES ==================================  */
 .interests__container {
-  display: flex;
-  justify-content: space-evenly;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   margin-top: 1.5rem;
   font-size: 1rem;
 }
@@ -521,3 +523,167 @@ img {
   align-items: center;
 }
 
+/* SCROLL TOP */
+
+.scroll__top {
+  position: fixed;
+  right: 2rem;
+  bottom: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  visibility: hidden;
+  border-radius: 50%;
+}
+
+.scroll__top-icon {
+  font-size: 2rem;
+  color: var(--text-color);
+  border-radius: 50%;
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 6rem;
+  border-radius: 50%;
+}
+
+/* ============================================ MEDIA QUERIES ============================================ */
+/* for small devices use two columns */
+@media screen and (max-width: 425px) {
+  .nav__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .skills__label {
+    font-size: small;
+    
+  }
+  .skills__label-languages .label-1  {
+    font-size: small;
+    justify-content: space-evenly;
+  }
+
+  .education__line {
+    height: 110%;
+  }
+
+  .skills__label-languages {
+    visibility: hidden;
+  }
+
+  .references__container {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  body {
+    margin: 3rem 0;
+  }
+  .references__content {
+    justify-content: center;
+  }
+
+  .skills__label-languages {
+    visibility: hidden;
+  }
+
+  .education__line {
+    display: block;
+    width: 2px;
+    height: 110%;
+    background-color: var(--text-colorlight);
+    margin-left: 0.45rem;
+    transform: translateY(7px, 0);
+  }
+  
+  .experience__line {
+    display: block;
+    width: 2px;
+    height: 105%;
+    background-color: var(--text-colorlight);
+    margin-left: 0.45rem;
+  }
+
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .l-header,
+  .scroll__top {
+    display: none;
+  }
+
+
+  .resume {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow:  0 0 8px rgba(13, 12, 12, 0.1);
+  }
+
+  .interests__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume__left {
+    background-color: var(--container-color-alt);
+  }
+
+  .certificate__content {
+    text-align: left;
+  }
+
+  .resume__left, .resume__right{
+    padding: 0 1rem;
+  }
+
+  .resume__right .section-title {
+    text-align: center !important;
+  }
+
+  .section-title, .profile__description, .section-caption{
+    text-align: initial;
+  }
+
+  .section-title {
+    margin-top: 3rem;
+  }
+
+  .skills__skill-title {
+    display: flex;
+    justify-content: left;
+  }
+
+  .home__container{
+    gap: 1.5rem;
+  }
+
+  .home__button-movil{
+    display: none;
+  }
+
+  .references__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .interests__container{
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 6rem;
+    justify-content: center;
+  }
+
+  .title__hobbies {
+    text-align: center !important;
+  }
+  
+  
+}
