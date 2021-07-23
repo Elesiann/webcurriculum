@@ -521,3 +521,29 @@ img {
   align-items: center;
 }
 
+/* SCROLL TOP */
+
+.scroll__top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  visibility: hidden;
+  border-radius: 50%;
+}
+
+.scroll__top-icon {
+  font-size: 3rem;
+  color: var(--text-color);
+  border-radius: 50%;
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 6rem;
+  border-radius: 50%;
+}

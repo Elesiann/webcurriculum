@@ -47,13 +47,21 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-ScrollReveal({
+/*==================== SCROLL REVEAL ====================*/
+
+const srShowScrollTopIcon = ScrollReveal({
+  distance: "500px",
+  duration: 2000,
+  reset: true,
+});
+
+const srSkillBars = ScrollReveal({
   distance: "500px",
   duration: 1000,
   reset: false,
 });
 
-ScrollReveal().reveal(
+srSkillBars.reveal(
   `
   .skills__bar-front-html, 
   .skills__bar-front-css, 
@@ -65,7 +73,8 @@ ScrollReveal().reveal(
   .skills__bar-front-office,
   .skills__bar-front-portuguese,
   .skills__bar-front-english,
-  .skills__bar-front-spanish
+  .skills__bar-front-spanish,
+  .scroll__top,
   
 `,
   {
@@ -73,3 +82,13 @@ ScrollReveal().reveal(
     interval: 100,
   }
 );
+
+/* ========== SHOW SCROOL TOP ========== */
+function scrollTop() {
+  const scrollTop = document.getElementById("scroll-top");
+  // When the scroll is higher than 500 height, add the show-scroll class to the function
+  if (this.scrollY >= 500) scrollTop.classList.add("show-scroll");
+  // Else remove the class
+  else scrollTop.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollTop);
