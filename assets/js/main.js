@@ -74,12 +74,12 @@ srSkillBars.reveal(
   .skills__bar-front-portuguese,
   .skills__bar-front-english,
   .skills__bar-front-spanish,
-  .scroll__top,
+  .scroll__top
   
 `,
   {
     origin: "left",
-    interval: 1000,
+    interval: 300,
   }
 );
 
