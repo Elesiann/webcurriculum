@@ -261,6 +261,7 @@ img {
   display: flex;
   align-items: center;
   font-size: var(--small-font-size);
+  margin-top: 0.25rem;
 }
 
 .home__icon {
@@ -310,7 +311,6 @@ img {
 .profile__description {
   justify-content: center;
   text-align: justify;
-  
 }
 
 /* ========== EDUCATION ========== */
@@ -550,9 +550,28 @@ img {
   border-radius: 50%;
 }
 
+/* =========================== FOOTER =========================== */
+
+.footer__description{
+  display: flex;
+  justify-content: center;
+  padding: .25rem;
+  margin-top: 2rem;
+  color: var(--container-color);
+  background-color: var(--text-color);
+}
+
 /* ============================================ MEDIA QUERIES ============================================ */
 /* for small devices use two columns */
-@media screen and (max-width: 425px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .home__list {
+    font-size: var(--small-font-size);
+  }
+
+  .home__information {
+    margin-top: 1rem;
+  }
+
   .nav__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -560,15 +579,20 @@ img {
 
   .skills__label {
     font-size: small;
-    
   }
-  .skills__label-languages .label-1  {
+  .skills__label-languages .label-1 {
     font-size: small;
     justify-content: space-evenly;
   }
 
   .education__line {
     height: 110%;
+    margin-left: 0.45rem;
+  }
+
+  .experience__line {
+    height: 110%;
+    margin-left: 0.45rem;
   }
 
   .skills__label-languages {
@@ -578,12 +602,65 @@ img {
   .references__container {
     justify-content: center;
   }
+
+  .references__content {
+    text-align: center;
+  }
+}
+/* ============================================ MEDIA QUERIES ============================================ */
+@media only screen and (min-device-width: 667px) and (max-device-width: 967px) {
+  .home__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--small-font-size);
+  }
+
+  .social__container {
+    display: flex;
+    justify-content: center;
+    font-size: var(--small-font-size);
+  }
+
+  .experience__line {
+    margin-left: 0.45rem;
+    height: 110%;
+  }
+  .education__line {
+    margin-left: 0.45rem;
+    height: 110%;
+  }
+
+  .references__container {
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .skills__label-languages {
+    display: flex;
+    justify-content: space-between;
+  }
+  .interests__container {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 6rem;
+    justify-content: center;
+  }
 }
 
+/* ============================================ MEDIA QUERIES ============================================ */
 @media screen and (min-width: 968px) {
   body {
     margin: 3rem 0;
   }
+
+  .home__information {
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--small-font-size);
+    margin-top: 0.25rem;
+  }
+
   .references__content {
     justify-content: center;
   }
@@ -600,7 +677,7 @@ img {
     margin-left: 0.45rem;
     transform: translateY(7px, 0);
   }
-  
+
   .experience__line {
     display: block;
     width: 2px;
@@ -612,7 +689,6 @@ img {
   .bd-container {
     margin-left: auto;
     margin-right: auto;
-    
   }
 
   .l-header,
@@ -620,12 +696,11 @@ img {
     display: none;
   }
 
-
   .resume {
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     background-color: var(--container-color);
-    box-shadow:  0 0 8px rgba(13, 12, 12, 0.1);
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.1);
   }
 
   .interests__content {
@@ -642,7 +717,8 @@ img {
     text-align: left;
   }
 
-  .resume__left, .resume__right{
+  .resume__left,
+  .resume__right {
     padding: 0 1rem;
   }
 
@@ -650,7 +726,9 @@ img {
     text-align: center !important;
   }
 
-  .section-title, .profile__description, .section-caption{
+  .section-title,
+  .profile__description,
+  .section-caption {
     text-align: initial;
   }
 
@@ -663,19 +741,19 @@ img {
     justify-content: left;
   }
 
-  .home__container{
+  .home__container {
     gap: 1.5rem;
   }
 
-  .home__button-movil{
+  .home__button-movil {
     display: none;
   }
 
-  .references__container{
+  .references__container {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .interests__container{
+  .interests__container {
     grid-template-columns: repeat(4, max-content);
     column-gap: 6rem;
     justify-content: center;
@@ -684,6 +762,4 @@ img {
   .title__hobbies {
     text-align: center !important;
   }
-  
-  
 }
