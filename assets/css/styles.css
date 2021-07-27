@@ -59,8 +59,8 @@ body.dark-theme {
 /* ========================= BUTTON DARK/LIGHT ========================= */
 .change-theme {
   position: absolute;
-  right: -.5rem;
-  top: 1.25rem;
+  right: -0.5rem;
+  top: 2rem;
   display: flex;
   color: var(--text-color);
   font-size: 1.4rem;
@@ -68,10 +68,40 @@ body.dark-theme {
 }
 
 /* ========================= FONT SIZE VARIABLES TO SCALE ========================= */
+body.scale-cv {
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.875rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.688rem;
+}
 
 /* ========================= GENERATE PDF BUTTON ========================= */
+.generate-pdf {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
 
-/* ========================= CLASSES MODIFIED TO REDUCE SIZE AND PRINT ON A4 SHEET ========================= */
+.generate-pdf {
+  color: var(--title-color);
+}
+
+/* ========================== CLASSES MODIFIED TO REDUCE SIZE AND PRINT ON A4 SHEET ========================= */
+.scale-cv .change-theme,
+.scane-cv .generate-pdf {
+  display: none;
+}
+
+.scale-cv .bd-container {
+  max-width: 595px;
+}
+
+/* ================================================== MAIN ================================================== */
 body {
   margin: 0 0 var(--header-height) 0;
   padding: 0;
@@ -582,7 +612,7 @@ img {
 
 /* ============================================ MEDIA QUERIES ============================================ */
 /* for small devices use two columns */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 666px) {
   .home__list {
     font-size: var(--small-font-size);
   }
@@ -627,7 +657,7 @@ img {
   }
 }
 /* ============================================ MEDIA QUERIES ============================================ */
-@media only screen and (min-width: 667px) and (max-width: 967px) {
+@media screen and (min-width: 667px) and (max-width: 967px) {
   .home__list {
     display: flex;
     justify-content: space-between;
@@ -734,6 +764,10 @@ img {
   .resume__left,
   .resume__right {
     padding: 0 2rem;
+  }
+
+  .generate-pdf {
+    display: inline-block;
   }
 
   .certificate__content {
