@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
-  <body class="scale-cv">
+  <body>
     <!-- ===================================================== HEADER ===================================================== -->
 
     <header class="l-header" id="header">
@@ -74,7 +74,7 @@
 
     <main class="l-main bd-container">
       <!-- ALL ELEMENTS IN THIS DIV ARE GENERATED IN PDF-->
-      <div class="resume">
+      <div class="resume" id="area-cv">
         <div class="resume__left">
           <!-- ===================================================== HOME ===================================================== -->
           
@@ -231,7 +231,7 @@
             
         </div>
         
-        <div class="resume__right bd-container">
+        <div class="resume__right">
             <!-- ============================== EXPERIENCE ============================== -->
             <section class="experience section" id="experience">
               <h2 class="section-title">Experiência</h2>
@@ -241,7 +241,7 @@
                 <div class="experience__content">
                   <div class="experience__time">
                     <span class="experience__rounder"></span>
-                    <span class="experience__line"></span>
+                    <span class="experience__line-1"></span>
                   </div>
                   <div class="experience__data bd-grid">
                     <h3 class="experience__title">FrontEnd WebDeveloper</h3>
@@ -331,11 +331,8 @@
             </section>
   
             <!-- ============================= LANGUAGES ============================= -->
-  
-  
-  
             <section class="skills section" id="skills">
-              <h2 class="section-title">Habilidades</h2>
+              <h2 class="section-title" >Habilidades</h2>
               <h3 class="section-caption">Programação</h3>
               <div class="skills__container container">
                 <!--==================================-->
@@ -406,7 +403,10 @@
                   </div>
                   
                 </div>
+
+                
               </section>
+              
             </section>
   
             <!-- ============================= Interests ============================= -->
@@ -437,15 +437,12 @@
               </div>
               <!--=================================================-->
             </setion>
-  
-            
-  
         </div>
       </div>
       
     </main>
     <footer class="footer" id="footer">
-      <p class="footer__description">This site was made by me :)</p>
+      <p class="footer__description"> Giovani M. Corrêa | This site was made by me :)</p>
     </footer>
 
     <!-- ===================================================== SCROLL TOP ===================================================== -->
@@ -454,6 +451,7 @@
     </a>
 
     <!-- ===================================================== HTML2PDF ===================================================== -->
+    <script src="/assets/js/html2pdf.bundle.min.js"></script>
 
     <!-- ===================================================== SCROLL REVEAL ===================================================== -->
     <script src="https://unpkg.com/scrollreveal"></script>
