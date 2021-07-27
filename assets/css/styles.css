@@ -180,6 +180,16 @@ body.scale-cv {
   column-gap: 2rem;
 }
 
+.scale-cv .resume__left,
+.scale-cv .resume__right {
+  background-color: white;
+  margin-left: 1rem;
+}
+
+.scale-cv .generate-pdf {
+  display: none;
+}
+
 /* ================================================== MAIN ================================================== */
 body {
   margin: 0 0 var(--header-height) 0;
