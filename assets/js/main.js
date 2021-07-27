@@ -73,8 +73,7 @@ srSkillBars.reveal(
   .skills__bar-front-office,
   .skills__bar-front-portuguese,
   .skills__bar-front-english,
-  .skills__bar-front-spanish,
-  .scroll__top
+  .skills__bar-front-spanish
   
 `,
   {
