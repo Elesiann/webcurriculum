@@ -176,7 +176,7 @@ body.scale-cv {
   gap: 0.25rem;
 }
 
-.scale-cv .interests__container{
+.scale-cv .interests__container {
   column-gap: 2rem;
 }
 
@@ -784,6 +784,11 @@ img {
     margin: 3rem 0 0 0rem;
   }
 
+  .languages {
+    page-break-after: auto;
+    page-break-inside: avoid;
+  }
+
   .home__information {
     display: flex;
     font-size: var(--small-font-size);
@@ -880,6 +885,11 @@ img {
     margin-top: 1rem;
   }
 
+  .skills {
+    page-break-after: auto;
+    page-break-inside: avoid;
+  }
+
   .skills__skill-title {
     display: flex;
     justify-content: left;
@@ -895,6 +905,10 @@ img {
 
   .references__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .references__content {
+    text-align: center;
   }
 
   .interests__container {
