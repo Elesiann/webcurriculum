@@ -922,7 +922,7 @@ img {
   }
 
   .interests__container {
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(2, max-content);
     column-gap: 4rem;
     justify-content: center;
   }

@@ -47,8 +47,8 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-/*==================== SCROLL REVEAL ====================
-
+// ==================== SCROLL REVEAL ====================
+/*
 const srShowScrollTopIcon = ScrollReveal({
   distance: "500px",
   duration: 2000,
@@ -56,7 +56,7 @@ const srShowScrollTopIcon = ScrollReveal({
 });
 
 const srSkillBars = ScrollReveal({
-  distance: "1000px",
+  distance: "500px",
   duration: 1000,
   reset: false,
 });
@@ -78,10 +78,11 @@ srSkillBars.reveal(
 `,
   {
     origin: "left",
-    interval: 500,
+    interval: 300,
   }
 );
 */
+
 
 /* ========== SHOW SCROLL TOP ========== */
 function scrollTop() {
