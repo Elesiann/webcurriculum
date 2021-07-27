@@ -56,7 +56,7 @@ const srShowScrollTopIcon = ScrollReveal({
 });
 
 const srSkillBars = ScrollReveal({
-  distance: "500px",
+  distance: "1000px",
   duration: 1000,
   reset: false,
 });
@@ -79,7 +79,7 @@ srSkillBars.reveal(
 `,
   {
     origin: "left",
-    interval: 300,
+    interval: 500,
   }
 );
 
