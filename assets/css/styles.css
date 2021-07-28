@@ -241,8 +241,8 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   text-align: center;
-  margin-bottom: var(--mb-3);
-  margin-top: var(--mb-1);
+  margin-bottom: var(--mb-1);
+  margin-top: var(--mb-3);
 }
 
 .section-caption {
@@ -250,7 +250,7 @@ img {
   color: var(--text-colorlight);
   font-weight: var(--normal-font-size);
   text-align: center;
-  margin-top: -1.5rem;
+  
 }
 
 /* ========================= LAYOUT ========================= */
@@ -493,6 +493,13 @@ img {
   background-color: var(--text-colorlight);
   margin-left: 0.29rem;
 }
+.experience__line-1 {
+  display: block;
+  width: 2px;
+  height: 105%;
+  background-color: var(--text-colorlight);
+  margin-left: 0.29rem;
+}
 
 .education__data,
 .experience__data {
@@ -637,7 +644,7 @@ img {
 }
 
 .references__title {
-  font-size: var(--h3-font-size);
+  font-size: 1.2rem;
 }
 
 /* ================================== HOBBIES ==================================  */
@@ -701,15 +708,19 @@ img {
 
 /* ============================================ MEDIA QUERIES ============================================ */
 
+@media screen and (min-width: 320px) and (max-width: 375px ){
+  .footer__description {
+    font-size: .75rem;
+  }
+}
+
 /* for small devices use two columns */
-@media screen and (min-width: 320px) and (max-width: 666px) {
+@media screen and (min-width: 320px) and (max-width: 708px) {
   .home__list {
     font-size: var(--small-font-size);
   }
 
-  .home__information {
-    margin-top: 1rem;
-  }
+
 
   .nav__list {
     grid-template-columns: repeat(2, 1fr);
@@ -733,6 +744,10 @@ img {
     height: 110%;
     margin-left: 0.45rem;
   }
+  .experience__line-1 {
+    height: 110%;
+    margin-left: 0.45rem;
+  }
 
   .skills__label-languages {
     visibility: hidden;
@@ -748,7 +763,7 @@ img {
 }
 
 /* ============================================ MEDIA QUERIES ============================================ */
-@media screen and (min-width: 667px) and (max-width: 967px) {
+@media screen and (min-width: 709px) and (max-width: 967px) {
   .home__list {
     display: flex;
     justify-content: space-between;
@@ -757,11 +772,16 @@ img {
 
   .social__container {
     display: flex;
+    grid-template-rows: repeat(2, max-content);
     justify-content: space-between;
     font-size: var(--small-font-size);
   }
 
   .experience__line {
+    margin-left: 0.45rem;
+    height: 110%;
+  }
+  .experience__line-1 {
     margin-left: 0.45rem;
     height: 110%;
   }
@@ -771,7 +791,7 @@ img {
   }
 
   .references__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(0, 1fr);
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -914,7 +934,7 @@ img {
   }
 
   .references__container {
-    grid-template-columns: repeat(2, 1fr);
+    
   }
 
   .references__content {
