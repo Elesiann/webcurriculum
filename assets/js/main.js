@@ -1,4 +1,4 @@
-/* ========================= SHOW MENU ========================= */
+/* ============================================= SHOW MENU ============================================= */
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId);
@@ -13,7 +13,7 @@ const showMenu = (toggleId, navId) => {
 };
 showMenu("nav-toggle", "nav-menu");
 
-/* ========================= REMOVE MENU MOBILE ========================= */
+/* ============================================= REMOVE MENU MOBILE ============================================= */
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
@@ -23,7 +23,7 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+/*======================================== SCROLL SECTIONS ACTIVE LINK ========================================*/
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -47,7 +47,7 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-// ==================== SCROLL REVEAL ====================
+// ======================================== SCROLL REVEAL ========================================
 /*
 const srShowScrollTopIcon = ScrollReveal({
   distance: "500px",
@@ -84,7 +84,7 @@ srSkillBars.reveal(
 */
 
 
-/* ========== SHOW SCROLL TOP ========== */
+/* ================================================== SHOW SCROLL TOP ================================================== */
 function scrollTop() {
   const scrollTop = document.getElementById("scroll-top");
   // When the scroll is higher than 500 height, add the show-scroll class to the function
@@ -94,7 +94,7 @@ function scrollTop() {
 }
 window.addEventListener("scroll", scrollTop);
 
-/* ============================== DARK LIGHT THEME ==================================*/
+/* ================================================== DARK LIGHT THEME ======================================================*/
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "bxs-sun";
@@ -130,17 +130,17 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-/* ============================== REDUCE THE SIZE AND PRINT ON A4 ==================================*/
+/* ======================================== REDUCE THE SIZE AND PRINT ON A4 ============================================*/
 function scaleCV() {
   document.body.classList.add("scale-cv");
 }
 
-/* ============================== REMOVE THE SIZE WHEN CV IS DOWNLOADED ==================================*/
+/* ======================================== REMOVE THE SIZE WHEN CV IS DOWNLOADED ============================================*/
 function removeScale() {
   document.body.classList.remove("scale-cv");
 }
 
-/* ============================== GENERATE PDF ==================================*/
+/* ================================================== GENERATE PDF ======================================================*/
 // pdf area
 let areaCv = document.getElementById("area-cv");
 
