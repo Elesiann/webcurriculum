@@ -75,6 +75,7 @@ body.scale-cv {
   --normal-font-size: 0.813rem;
   --small-font-size: 0.75rem;
   --smaller-font-size: 0.688rem;
+  background-color: white;
 }
 
 /* ========================= GENERATE PDF BUTTON ========================= */
@@ -97,6 +98,10 @@ body.scale-cv {
   display: none;
 }
 
+.scale-cv .resume {
+  background-color: white;
+}
+
 .scale-cv .bd-container {
   max-width: 595px;
 }
@@ -106,7 +111,7 @@ body.scale-cv {
 }
 
 .scale-cv .section-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .scale-cv .resume__left,
@@ -190,6 +195,17 @@ body.scale-cv {
   display: none;
 }
 
+.scale-cv .bd-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.scale-cv .languages-section {
+  page-break-after: auto;
+  page-break-inside: avoid;
+  margin-top: 3rem;
+}
+
 /* ================================================== MAIN ================================================== */
 body {
   margin: 0 0 var(--header-height) 0;
@@ -242,7 +258,7 @@ img {
   letter-spacing: 0.3rem;
   text-align: center;
   margin-bottom: var(--mb-1);
-  margin-top: var(--mb-3);
+  margin-top: var(--mb-1);
 }
 
 .section-caption {
@@ -521,6 +537,18 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+/* ================= QUALITIES ================= */
+.qualities__content{
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.qualities__icon{
+  margin-right: .5rem;
+  font-size: 1.2rem;
+}
+
 /* ================= SKILLS =================  */
 .skills__label {
   display: flex;
@@ -564,6 +592,13 @@ img {
   display: block;
   background-color: var(--skill-color);
   width: 40%;
+  height: 1.5rem;
+  margin-bottom: var(--mb-2);
+}
+.skills__bar-front-bs {
+  display: block;
+  background-color: var(--skill-color);
+  width: 35%;
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
@@ -720,11 +755,13 @@ img {
     font-size: var(--small-font-size);
   }
 
-
-
   .nav__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+
+  .references__container {
+    font-size: .813rem;
   }
 
   .skills__label {
@@ -814,9 +851,10 @@ img {
     margin: 3rem 0 0 0rem;
   }
 
-  .languages {
+  .languages-section {
     page-break-after: auto;
     page-break-inside: avoid;
+    margin-top: 3rem;
   }
 
   .home__information {
@@ -894,7 +932,7 @@ img {
   }
 
   .certificate__content {
-    text-align: center;
+    text-align: left;
   }
 
   .resume__right .section-title {
