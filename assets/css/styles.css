@@ -85,9 +85,6 @@ body.scale-cv {
   color: var(--text-color);
   font-size: 1.4rem;
   cursor: pointer;
-}
-
-.generate-pdf {
   color: var(--title-color);
 }
 
