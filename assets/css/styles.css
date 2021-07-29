@@ -199,10 +199,10 @@ body.scale-cv {
   gap: 0.75rem;
 }
 
-.scale-cv .languages-section {
+.scale-cv .languages {
   page-break-after: auto;
   page-break-inside: avoid;
-  margin-top: 3rem;
+  
 }
 
 /* ================================================== MAIN ================================================== */
@@ -256,8 +256,8 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   text-align: center;
-  margin-bottom: var(--mb-1);
-  margin-top: var(--mb-1);
+  margin-bottom: var(--mb-2);
+  margin-top: var(--mb-3);
 }
 
 .section-caption {
@@ -849,10 +849,9 @@ img {
     margin: 3rem 0 0 0rem;
   }
 
-  .languages-section {
+  .languages {
     page-break-after: auto;
     page-break-inside: avoid;
-    margin-top: 3rem;
   }
 
   .home__information {
