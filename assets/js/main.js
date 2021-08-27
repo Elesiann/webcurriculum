@@ -48,7 +48,7 @@ function scrollActive() {
 window.addEventListener("scroll", scrollActive);
 
 // ======================================== SCROLL REVEAL ========================================
-/*
+
 const srShowScrollTopIcon = ScrollReveal({
   distance: "500px",
   duration: 2000,
@@ -73,7 +73,8 @@ srSkillBars.reveal(
   .skills__bar-front-office,
   .skills__bar-front-portuguese,
   .skills__bar-front-english,
-  .skills__bar-front-spanish
+  .skills__bar-front-spanish,
+  .skills__bar-front-bs
   
 `,
   {
@@ -81,8 +82,6 @@ srSkillBars.reveal(
     interval: 300,
   }
 );
-*/
-
 
 /* ================================================== SHOW SCROLL TOP ================================================== */
 function scrollTop() {
@@ -107,7 +106,7 @@ const selectedIcon = localStorage.getItem("selected-icon");
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme) ? "bxs-moon" : "bxs-sun";
+  themeButton.classList.contains(iconTheme) ? "bxs-sun" : "bxs-moon";
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
@@ -115,7 +114,7 @@ if (selectedTheme) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
   );
-  themeButton.classList[selectedIcon === "bxs-moon" ? "add" : "remove"](
+  themeButton.classList[selectedIcon === "bxs-sun" ? "add" : "remove"](
     iconTheme
   );
 }
