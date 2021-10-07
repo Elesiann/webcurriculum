@@ -464,6 +464,10 @@ img {
 }
 
 /* ============================== EDUCATION ============================== */
+
+#education {
+  page-break-inside: avoid;
+}
 .span_infinite {
   transform: rotate(-45deg);
 }
@@ -679,6 +683,11 @@ img {
 }
 
 /* ================================== HOBBIES ==================================  */
+
+.interests {
+  page-break-inside: avoid;
+}
+
 .interests__container {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
