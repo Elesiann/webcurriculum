@@ -55,6 +55,7 @@ const srShowScrollTopIcon = ScrollReveal({
   reset: true,
 });
 
+
 const srSkillBars = ScrollReveal({
   distance: "500px",
   duration: 1000,
@@ -74,12 +75,13 @@ srSkillBars.reveal(
   .skills__bar-front-portuguese,
   .skills__bar-front-english,
   .skills__bar-front-spanish,
-  .skills__bar-front-bs
-  
+  .skills__bar-front-bs,
+  .skills__bar-front-sc,
+  .skills__bar-front-redux
 `,
   {
     origin: "left",
-    interval: 300,
+    interval: 200,
   }
 );
 
@@ -159,7 +161,6 @@ function generateResume() {
   html2pdf(areaCv, opt);
 }
 
-// When the button is clicked, it executes the three functions
 resumeButton.addEventListener("click", () => {
   // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
   scaleCV();

@@ -35,6 +35,7 @@
   --z-fixed: 100;
   /* ========================= BASE ========================= */
 }
+
 *,
 ::before,
 ::after {
@@ -103,16 +104,20 @@ body.scale-cv {
 }
 
 .scale-cv .section {
-  padding: 1.5rem 0 0.8rem;
+  padding: 0.5rem 0 0.8rem;
 }
 
 .scale-cv .section-title {
-  margin-bottom: 1rem;
+  margin-bottom: var(--mb-1);
 }
 
 .scale-cv .resume__left,
 .scale-cv .resume__right {
   padding: 0 1rem;
+}
+
+.scale-cv .home {
+  padding-bottom: unset;
 }
 
 .scale-cv .home__img {
@@ -122,6 +127,7 @@ body.scale-cv {
 
 .scale-cv .home__container {
   gap: 1.5rem;
+  padding: unset;
 }
 
 .scale-cv .home__data {
@@ -161,15 +167,17 @@ body.scale-cv {
   height: 110%;
   margin-left: 50%;
 }
+
 .scale-cv .experience__line {
-  width: 1px;
+  width: 2px;
   height: 105%;
-  margin-left: 42%;
+  margin-left: 5px;
 }
+
 .scale-cv .experience__line-1 {
-  width: 1px;
+  width: 2px;
   height: 120%;
-  margin-left: 42%;
+  margin-left: 5px;
 }
 
 .scale-cv .education__data,
@@ -199,7 +207,7 @@ body.scale-cv {
 .scale-cv .languages {
   page-break-after: auto;
   page-break-inside: avoid;
-  
+
 }
 
 /* ================================================== MAIN ================================================== */
@@ -254,7 +262,7 @@ img {
   letter-spacing: 0.3rem;
   text-align: center;
   margin-bottom: var(--mb-2);
-  margin-top: var(--mb-3);
+  margin-top: var(--mb-1);
 }
 
 .section-caption {
@@ -276,9 +284,10 @@ img {
   display: grid;
   gap: 1.5rem;
 }
+
 .bd-grid-small {
   display: grid;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .l-header {
@@ -411,7 +420,6 @@ img {
   display: flex;
   align-items: center;
   font-size: var(--small-font-size);
-  margin-top: 0.25rem;
 }
 
 .home__icon {
@@ -468,6 +476,7 @@ img {
 #education {
   page-break-inside: avoid;
 }
+
 .span_infinite {
   transform: rotate(-45deg);
 }
@@ -479,7 +488,7 @@ img {
 
 .education__time,
 .experience__time {
-  padding-right: 1rem;
+  padding-right: 1.05rem;
 }
 
 .education__rounder,
@@ -495,7 +504,7 @@ img {
 
 .education__line {
   display: block;
-  width: 2px;
+  width: 3px;
   height: 110%;
   background-color: var(--text-colorlight);
   margin-left: 45%;
@@ -504,14 +513,15 @@ img {
 
 .experience__line {
   display: block;
-  width: 2px;
+  width: 3px;
   height: 105%;
   background-color: var(--text-colorlight);
   margin-left: 0.29rem;
 }
+
 .experience__line-1 {
   display: block;
-  width: 2px;
+  width: 3px;
   height: 105%;
   background-color: var(--text-colorlight);
   margin-left: 0.29rem;
@@ -531,6 +541,10 @@ img {
 .experience__company {
   font-size: var(--small-font-size);
   color: var(--title-color);
+}
+
+.education__studies__school__name {
+  color: var(--text-colorlight);
 }
 
 .education__year {
@@ -555,6 +569,7 @@ img {
   justify-content: space-between;
   margin-top: var(--mb-3);
 }
+
 .skills__skill-title {
   margin-top: var(--mb-2);
   display: flex;
@@ -573,10 +588,11 @@ img {
   margin-top: var(--mb-1);
   overflow: hidden;
 }
+
 .skills__bar-front-html {
   display: block;
   background-color: var(--skill-color);
-  width: 75%;
+  width: 90%;
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
@@ -584,17 +600,19 @@ img {
 .skills__bar-front-css {
   display: block;
   background-color: var(--skill-color);
-  width: 60%;
+  width: 90%;
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
+
 .skills__bar-front-js {
   display: block;
   background-color: var(--skill-color);
-  width: 40%;
+  width: 70%;
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
+
 .skills__bar-front-bs {
   display: block;
   background-color: var(--skill-color);
@@ -602,6 +620,7 @@ img {
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
+
 .skills__bar-front-sass {
   display: block;
   background-color: var(--skill-color);
@@ -609,13 +628,30 @@ img {
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
+
 .skills__bar-front-react {
   display: block;
   background-color: var(--skill-color);
-  width: 15%;
+  width: 60%;
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
+
+.skills__bar-front-sc {
+  display: block;
+  background-color: var(--skill-color);
+  width: 20%;
+  height: 1.5rem;
+  margin-bottom: var(--mb-2);
+}
+.skills__bar-front-redux {
+  display: block;
+  background-color: var(--skill-color);
+  width: 40%;
+  height: 1.5rem;
+  margin-bottom: var(--mb-2);
+}
+
 .skills__bar-front-photoshop {
   display: block;
   background-color: var(--skill-color);
@@ -623,6 +659,7 @@ img {
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
+
 .skills__bar-front-illustrator {
   display: block;
   background-color: var(--skill-color);
@@ -630,6 +667,7 @@ img {
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
+
 .skills__bar-front-office {
   display: block;
   background-color: var(--skill-color);
@@ -637,6 +675,7 @@ img {
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
+
 .skills__bar-front-portuguese {
   display: block;
   background-color: var(--skill-color);
@@ -644,6 +683,7 @@ img {
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
+
 .skills__bar-front-english {
   display: block;
   background-color: var(--skill-color);
@@ -651,6 +691,7 @@ img {
   height: 1.5rem;
   margin-bottom: var(--mb-2);
 }
+
 .skills__bar-front-spanish {
   display: block;
   background-color: var(--skill-color);
@@ -771,6 +812,7 @@ img {
   .skills__label {
     font-size: small;
   }
+
   .skills__label-languages .label-1 {
     font-size: small;
     justify-content: space-evenly;
@@ -785,6 +827,7 @@ img {
     height: 110%;
     margin-left: 0.45rem;
   }
+
   .experience__line-1 {
     height: 110%;
     margin-left: 0.45rem;
@@ -822,10 +865,12 @@ img {
     margin-left: 0.45rem;
     height: 110%;
   }
+
   .experience__line-1 {
     margin-left: 0.45rem;
     height: 110%;
   }
+
   .education__line {
     margin-left: 0.45rem;
     height: 110%;
@@ -842,6 +887,7 @@ img {
     display: flex;
     justify-content: space-between;
   }
+
   .interests__container {
     grid-template-columns: repeat(4, max-content);
     column-gap: 6rem;
@@ -863,7 +909,6 @@ img {
   .home__information {
     display: flex;
     font-size: var(--small-font-size);
-    margin-top: 0.25rem;
   }
 
   .references__content {
@@ -876,26 +921,27 @@ img {
 
   .education__line {
     display: block;
-    width: 2px;
+    width: 3px;
     height: 110%;
     background-color: var(--text-colorlight);
-    margin-left: 0.45rem;
+    margin-left: 7px;
     transform: translateY(7px, 0);
   }
 
   .experience__line {
     display: block;
-    width: 2px;
+    width: 3px;
     height: 110%;
     background-color: var(--text-colorlight);
-    margin-left: 0.45rem;
+    margin-left: 7px;
   }
+
   .experience__line-1 {
     display: block;
-    width: 2px;
+    width: 3px;
     height: 110%;
     background-color: var(--text-colorlight);
-    margin-left: 0.45rem;
+    margin-left: 7px;
   }
 
   .bd-container {
@@ -927,7 +973,7 @@ img {
 
   .resume__left,
   .resume__right {
-    padding: 0 2rem;
+    padding: 2rem;
   }
 
   .generate-pdf {
@@ -950,10 +996,6 @@ img {
 
   .resume__right .section-caption {
     text-align: center;
-  }
-
-  .section-title {
-    margin-top: 1rem;
   }
 
   .skills {
