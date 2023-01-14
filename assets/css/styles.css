@@ -551,6 +551,11 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+/* ===================================== LANGUAGES ===================================== */
+.languages__content .skills__skill-title{
+  justify-content: left;
+}
+
 /* ===================================== QUALITIES ===================================== */
 .qualities__content {
   display: inline-flex;
@@ -578,6 +583,15 @@ img {
   font-weight: var(--font-medium);
 }
 
+.skills__container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill,minmax(205px, 1fr));
+}
+
+.other__skills__container {
+  
+}
 /* ================================== SKILL BARS ================================== */
 
 .skills__bar {
@@ -1005,7 +1019,7 @@ img {
 
   .skills__skill-title {
     display: flex;
-    justify-content: left;
+    justify-content: center;
   }
 
   .home__container {
