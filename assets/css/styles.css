@@ -414,6 +414,7 @@ img {
   border-radius: 50%;
   justify-self: center;
   margin-bottom: var(--mb-1);
+  background-image: url("../img/pp-dark.jpg");
 }
 
 .home__title {
