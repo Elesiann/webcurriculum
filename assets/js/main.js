@@ -52,14 +52,13 @@ window.addEventListener("scroll", scrollActive);
 const srShowScrollTopIcon = ScrollReveal({
   distance: "500px",
   duration: 2000,
-  reset: true,
+  reset: true
 });
-
 
 const srSkillBars = ScrollReveal({
   distance: "500px",
   duration: 1000,
-  reset: false,
+  reset: false
 });
 
 srSkillBars.reveal(
@@ -81,7 +80,7 @@ srSkillBars.reveal(
 `,
   {
     origin: "left",
-    interval: 200,
+    interval: 200
   }
 );
 
@@ -153,7 +152,7 @@ let opt = {
   filename: "CV-Giovani-M-Correa.pdf",
   image: { type: "jpeg", quality: 0.98 },
   html2canvas: { scale: 4 },
-  jsPDF: { format: "a4", orientation: "portrait" },
+  jsPDF: { format: "a4", orientation: "portrait" }
 };
 
 // Function to call areaCv and Html2Pdf options
@@ -169,5 +168,5 @@ resumeButton.addEventListener("click", () => {
   generateResume();
 
   // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
-  setTimeout(removeScale, 5000);
+  // setTimeout(removeScale, 5000);
 });

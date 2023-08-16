@@ -8,7 +8,7 @@
   <title>Curriculum | Giovani M. Corrêa</title>
 
   <!-- ==================== REMIX ICONS ==================== -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
   <!-- ==================== BOX ICONS ====================  -->
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
@@ -39,12 +39,6 @@
           <li class="nav__item">
             <a href="#education" class="nav__link">
               <i class="bx bxs-school nav__icon"></i> Formação
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#languages" class="nav__link">
-              <i class="bx bx-book nav__icon"></i> Idiomas
             </a>
           </li>
 
@@ -102,7 +96,7 @@
             <div class="home__data bd-grid">
               <img src="/assets/img/pp.jpg" alt="" class="home__img" />
               <h1 class="home__title"><b>Giovani</b> M. Corrêa</h1>
-              <h3 class="home__profession">Frontend WebDeveloper</h3>
+              <h3 class="home__profession">Frontend Developer</h3>
 
               <!-- BUTTON TO DOWNLOAD CV IN PDF -->
               <div>
@@ -117,11 +111,10 @@
 
               <h2 class="section-title">Contato</h2>
               <ul class="home__list bd-grid-small">
-                <li class="home__information"> <i class="bx bx-map home__icon"></i> Imbituba, SC - Brazil
                 <li class="social__list"> <a
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=giovanicorrea.dev@gmail.com" target="_blank"
-                    class="social__link"><i class="bx bx-envelope home__icon"></i>giovanicorrea.dev@gmail.com</a>
-                <li class="home__information"> <i class="bx bx-phone home__icon"></i> +55 48 98426-2812
+                    class="social__link"><i
+                      class="bx bx-envelope home__icon"></i><span>giovanicorrea.dev@gmail.com</span></a>
               </ul>
 
             </div>
@@ -132,12 +125,12 @@
 
           <!-- ==================== Button to generate and download pdf ==================== -->
 
-          <a href="/assets/pdf/cvGiovaniMachado.pdf" download class="bx bxs-download generate-pdf"></a>
+          <!-- <a href="/assets/pdf/cvGiovaniMachado.pdf" download class="bx bxs-download generate-pdf"></a> -->
 
           <!-- quando atualizar o cv, comenta o código de cima, baixa por aqui e depois deixa estático de novo.
           porque pode dar problema com as skills bar e se a pessoa baixar o darkmode pra imprimir vai ficar tudo preto. -->
 
-          <!-- <a class="bx bxs-download generate-pdf" title="Generate PDF" id="resume-button"></a> -->
+          <a class="bx bxs-download generate-pdf" title="Generate PDF" id="resume-button"></a>
 
 
 
@@ -151,13 +144,11 @@
           <ul class="social__container bd-grid-small">
 
             <li class="social__list"> <a href="https://www.linkedin.com/in/giovanimachado/" target="_blank"
-                class="social__link"><i class="social__link bx bxl-linkedin-square social__icon"></i>giovanimachado</a>
+                class="social__link"><i class=" bx bxl-linkedin-square social__icon"></i><span>Linkedin</span></a>
             <li class="social__list"> <a href="https://www.behance.net/giovanimachado" target="_blank"
-                class="social__link"><i class="social__link bx bxl-behance social__icon"></i>giovanimachado</a>
+                class="social__link"><i class=" bx bxl-behance social__icon"></i><span>Behance</span></a>
             <li class="social__list"> <a href="https://github.com/Elesiann" target="_blank" class="social__link"><i
-                  class="social__link bx bxl-github social__icon"></i> elesiann </a>
-              <!-- <li class="social__list"> <a href="" target="_blank" class="social__link"><i class="social__link bx bxl-dribbble social__icon"></i> Dribbble </a> -->
-
+                  class=" bx bxl-github social__icon"></i> <span>Github</span> </a>
           </ul>
 
           <!-- ======================================== PERFIL ======================================== -->
@@ -165,9 +156,9 @@
 
             <h2 class="section-title">Sobre mim</h2>
             <p class="profile__description">
-              Desenvolvedor Web com 2 anos de experiência e entusiasta da programação no geral.
+              Desenvolvedor Frontend com 2 anos de experiência no ecossistema Javascript e entusiasta da programação.
               Sou uma pessoa dedicada, metódica e organizada e estou sempre buscando otimizar minhas técnicas e atingir
-              a excelência, entregando o melhor de mim mesmo.
+              a excelência.
             </p>
             <!-- ====================================================================================== -->
           </section>
@@ -182,63 +173,13 @@
             <div class="education__content">
               <div class="education__time">
                 <span class="education__rounder"></span>
-                <span class="education__line"></span>
               </div>
               <div class="education__data bd-grid-small">
-                <h3 class="education__title">Ciência da Computação</h3>
+                <h3 class="education__title">Graduação em Ciência da Computação</h3>
                 <span class="education__studies">Universidade Cruzeiro do Sul</span>
                 <span class="education__year">2019 - 2023</span>
               </div>
             </div>
-
-            <!--==============================================-->
-
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <!-- ERASE education__line AT THE END -->
-                <!-- <span class="education__line"></span> -->
-              </div>
-              <div class="education__data bd-grid-small">
-                <h3 class="education__title">Escolaridade</h3>
-                <span class="education__studies">Fundação Bradesco</span>
-                <span class="education__year">2007 - 2018</span>
-              </div>
-            </div>
-            <!--==============================================-->
-
-        </section>
-        <!-- ======================================================================================= -->
-
-
-        <!-- ========================================= LANGUAGES ========================================= -->
-        <section class="languages section" id="languages">
-          <h2 class="section-title">Idiomas</h2>
-          <div class="languages__container">
-            <ul class="languages__content">
-              <p class="skills__skill-title">Português</p>
-              <!-- <div class="skills__bar">
-                <div class="skills__bar-front-portuguese"></div>
-              </div> -->
-
-              <p class="skills__skill-title">Inglês</p>
-              <!-- <div class="skills__bar">
-                <div class="skills__bar-front-english"></div>
-              </div> -->
-
-              <p class="skills__skill-title">Espanhol</p>
-              <!-- <div class="skills__bar">
-                <div class="skills__bar-front-spanish"></div>
-              </div> -->
-
-              <!-- <div class="skills__label-languages">
-                <span class="label-1">Básico</span>
-                <span class="label-2"></span>
-                <span class="label-3">Avançado</span>
-              </div> -->
-
-            </ul>
-          </div>
         </section>
         <!-- ======================================================================================= -->
 
@@ -247,8 +188,7 @@
           <h2 class="section-title">Qualidades</h2>
           <ul class="qualities__container bd-grid-small">
             <li class="qualities__content"><i class="ri-task-line qualities__icon"></i> Dinamismo e organização</li>
-            <li class="qualities__content"><i class="ri-seedling-line qualities__icon"></i> Em constante crescimento
-            </li>
+            <li class="qualities__content"><i class="ri-speak-line qualities__icon"></i> Proeficiencia em inglês</li>
             <li class="qualities__content"><i class="ri-error-warning-line qualities__icon"></i> Solucionar Problemas
             </li>
             <li class="qualities__content"><i class="ri-team-line qualities__icon"></i> Trabalho em equipe</li>
@@ -302,10 +242,28 @@
                 <span class="experience__line-1"></span>
               </div>
               <div class="experience__data bd-grid">
+                <h3 class="experience__title">Desenvolvedor Front-End</h3>
+                <span class="experience__company">2023 - Atualmente | Orma Carbon</span>
+                <p class="experience__description">
+                  Desenvolvimento de diversos produtos e SAAS no braço tecnológico da holding GSS Carbon. Utilizando
+                  Next.js +
+                  React, TypeScript e Styled-Components.
+                </p>
+              </div>
+            </div>
+            <!-- ============================================================ -->
+            <!-- ============================================================ -->
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <span class="experience__line-1"></span>
+              </div>
+              <div class="experience__data bd-grid">
                 <h3 class="experience__title">Estagiário Front-End</h3>
                 <span class="experience__company">2021 - 2022 | The Foursales Company</span>
                 <p class="experience__description">
-                  Atuei no desenvolvimento Front-End do sistema interno da empresa, utilizando React, TypeScript, SASS,
+                  Desenvolvimento de features, resolução de bugs e acompanhamento Front-End no sistema de consultoria,
+                  recrutamento e seleção da empresa, utilizando React, TypeScript, SASS,
                   Redux, e Redux-saga.
                 </p>
               </div>
@@ -343,38 +301,41 @@
         </section>
         <!-- ================================================================================================= -->
 
-        <!-- ============================= CERTIFICATES ============================= -->
-        <section class="certificate section" id="certificates">
-          <h2 class="section-title">Certificados</h2>
-          <div class="certificate__container bd-grid">
+        <!-- ========================================================== -->
+        <section class="skills section" id="skills">
+          <h2 class="section-title">Habilidades</h2>
+          <div class="skills__container container">
+            <p class="skills__skill-title">React</p>
 
-            <div class="certificate__content">
-              <h3 class="certificate__title">Desenvolvimento Web Completo</h3>
-              <p class="certificate__description">HTML5, CSS3, BootStrap 4, JS, ES6, jQuery, SASS, MySQL, e
-                Wordpress | UDEMY </p>
-            </div>
+            <p class="skills__skill-title">React Native</p>
 
-            <div class="certificate__content">
-              <h3 class="certificate__title">Curso de JavaScript e TypeScript do básico ao avançado</h3>
-              <p class="certificate__description">Javascript e TypeScript - Front-End e Back-End - Node, Express, noSQL,
-                React, hooks, Redux, Design Patterns | UDEMY </p>
-            </div>
+            <p class="skills__skill-title">Redux e Redux-saga</p>
 
-            <div class="certificate__content">
-              <h3 class="certificate_ _title">Front-End profissional completo</h3>
-              <p class="certificate__description">SASS, CSS Grid Layout, Flexbox, Media Queries | UDEMY </p>
-            </div>
+            <p class="skills__skill-title">HTML Semântico</p>
 
+            <p class="skills__skill-title">Bootstrap</p>
+
+            <p class="skills__skill-title">SASS</p>
+
+            <p class="skills__skill-title">Styled-components </p>
+
+            <p class="skills__skill-title">TailwindCSS </p>
+
+            <p class="skills__skill-title"> Adobe Photoshop</p>
+
+            <p class="skills__skill-title">Adobe Illustrator</p>
+
+            <p class="skills__skill-title">Pacote Office</p>
           </div>
         </section>
 
         <!-- ============================= REFERENCES ============================= -->
-        <section class="references section" id="references">
+        <section style="margin-top: 2rem;" class="references section" id="references">
           <h2 class="section-title">Referências</h2>
           <div class="references__container bd-grid">
             <div class="references__content bd-grid">
               <h3 class="references__title">Thiago Freitas Polachini</h3>
-              <span class="references__subtitle">Gerente de T.I | SCPar Porto de Imbituba</span>
+              <span class="references__subtitle">IT Manager | SCPar Porto de Imbituba</span>
               <ul class="references__contact">
                 <li>thiago@portodeimbituba.com.br</li>
               </ul>
@@ -389,78 +350,16 @@
               </ul>
             </div>
 
-          </div>
-        </section>
-
-        <!-- ============================= LANGUAGES ============================= -->
-        <section class="skills section" id="skills">
-          <h2 class="section-title">Habilidades</h2>
-          <h3 class="section-caption">Programação</h3>
-          <div class="skills__container container">
-            <!--==================================-->
-            <p class="skills__skill-title">React</p>
-
-            <!--==================================-->
-            <p class="skills__skill-title">JavaScript</p>
-
-            <!--==================================-->
-            <p class="skills__skill-title">HTML</p>
-
-            <!--==================================-->
-            <p class="skills__skill-title">CSS e SASS</p>
-
-            <!--==================================-->
-            <p class="skills__skill-title">Redux e Redux-saga</p>
-
-            <!--==================================-->
-            <p class="skills__skill-title">BootStrap</p>
-
-            <!--==================================-->
-            <p class="skills__skill-title">Styled-components </p>
-
-            <p class="skills__skill-title">TailwindCSS </p>
-
-            <!--==================================-->
-            <!-- <div class="skills__label">
-              <span class="label">Básico</span>
-              <span class="label"></span>
-              <span class="label">Avançado</span>
-            </div> -->
-          </div>
-          <!-- ====================================================================================================== -->
-
-          <!-- ================================== OTHER SKILLS SECTION ==================================-->
-          <section class="skills section">
-            <h2 class="section-title">Habilidades</h2>
-            <h3 class="section-caption">Design e outros</h3>
-            <div class="other__skills__container container">
-              <!--==================================-->
-              <p class="skills__skill-title"> Adobe Photoshop</p>
-              <!-- <div class="skills__bar">
-                <div class="skills__bar-front-photoshop"></div>
-              </div> -->
-
-              <!--==================================-->
-              <p class="skills__skill-title">Adobe Illustrator</p>
-              <!-- <div class="skills__bar">
-                <div class="skills__bar-front-illustrator"></div>
-              </div> -->
-              <!--==================================-->
-              <p class="skills__skill-title">Pacote Office</p>
-              <!-- <div class="skills__bar">
-                <div class="skills__bar-front-office"></div>
-              </div> -->
-              <!--==================================-->
-              <!-- <div class="skills__label">
-                <span class="label">Básico</span>
-                <span class="label"></span>
-                <span class="label">Avançado</span>
-              </div> -->
-              <!--==================================-->
+            <!-- =================================================================== -->
+            <div class="references__content bd-grid">
+              <h3 class="references__title">Fernando Mallman</h3>
+              <span class="references__subtitle">Founder + CMO | Repenso Movimento Climático</span>
+              <ul class="references__contact">
+                <li>fernando@repenso.eco</li>
+              </ul>
             </div>
-          </section>
-          <!-- ================================== OTHER SKILLS SECTION ==================================-->
 
+          </div>
         </section>
 
         <!-- ============================= Interests ============================= -->
