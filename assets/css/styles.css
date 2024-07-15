@@ -760,6 +760,7 @@ img {
 
 .references__title {
   font-size: 1.2rem;
+  text-decoration: underline;
 }
 
 /* ================================== HOBBIES ==================================  */
