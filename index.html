@@ -90,7 +90,7 @@
             <div class="home__data bd-grid">
               <img src="/assets/img/pp.jpg" alt="Foto de perfil" class="home__img" id="profileImage" />
               <h1 class="home__title"><b>Giovani</b> M. Corrêa</h1>
-              <h3 class="home__profession">Frontend Developer</h3>
+              <h3 class="home__profession">Full-Stack Developer | AI Products</h3>
 
               <!-- BUTTON TO DOWNLOAD CV IN PDF -->
               <div>
@@ -117,6 +117,9 @@
           <!-- ==================== Theme change button ==================== -->
           <i class='bx bxs-moon change-theme' title="Theme" id="theme-button"></i>
 
+          <!-- ==================== Language switch button ==================== -->
+          <a href="index-en.html" class="bx bx-globe change-lang" title="English version"></a>
+
           <!-- ==================== Button to generate and download pdf ==================== -->
           <a class="bx bxs-download generate-pdf" title="Generate PDF" id="resume-button"></a>
 
@@ -140,9 +143,10 @@
 
             <h2 class="section-title">Sobre mim</h2>
             <p class="profile__description">
-              Desenvolvedor Frontend com 3 de experiência no ecossistema Javascript e entusiasta da programação.
-              Sou uma pessoa dedicada, metódica e organizada e estou sempre buscando otimizar minhas técnicas e atingir
-              a excelência.
+              Desenvolvedor Full-Stack com aproximadamente 5 anos de experiência, atuando entre front-end, back-end e
+              integrações.
+              Tenho uma abordagem metódica e organizada, valorizo boas decisões de arquitetura e busco constantemente
+              aprimorar a qualidade e a evolução dos sistemas que construí.
             </p>
           </section>
         </section>
@@ -170,15 +174,17 @@
         <section class="qualities section" id="qualities">
           <h2 class="section-title">Qualidades</h2>
           <ul class="qualities__container bd-grid-small">
-            <li class="qualities__content"><i class="ri-task-line qualities__icon"></i> Dinamismo e organização</li>
-            <li class="qualities__content"><i class="ri-speak-line qualities__icon"></i> Proficiência em inglês</li>
-            <li class="qualities__content"><i class="ri-error-warning-line qualities__icon"></i> Solucionar Problemas
-            </li>
-            <li class="qualities__content"><i class="ri-team-line qualities__icon"></i> Trabalho em equipe</li>
-            <li class="qualities__content"><i class="ri-eye-line qualities__icon"></i> Atento a detalhes</li>
-            <li class="qualities__content"><i class="ri-calendar-check-line qualities__icon"></i> Planejamento</li>
-            <li class="qualities__content"><i class="ri-speed-line qualities__icon"></i> Fast learner</li>
-            <li class="qualities__content"><i class="ri-funds-line qualities__icon"></i> Idealizador</li>
+            <li class="qualities__content"><i class="ri-speak-line qualities__icon"></i> Inglês proficiente (leitura,
+              escrita, conversação)</li>
+            <li class="qualities__content"><i class="ri-code-s-slash-line qualities__icon"></i> Ownership end-to-end de
+              features e sistemas</li>
+            <li class="qualities__content"><i class="ri-error-warning-line qualities__icon"></i> Debugging e
+              troubleshooting em produção</li>
+            <li class="qualities__content"><i class="ri-git-merge-line qualities__icon"></i> Code review e padronização
+              técnica</li>
+            <li class="qualities__content"><i class="ri-team-line qualities__icon"></i> Comunicação técnica clara</li>
+            <li class="qualities__content"><i class="ri-file-list-3-line qualities__icon"></i> Documentação de
+              arquitetura e decisões</li>
           </ul>
         </section>
         <!-- ======================================================================================= -->
@@ -197,14 +203,20 @@
                 <span class="experience__line-1"></span>
               </div>
               <div class="experience__data bd-grid">
-                <h3 class="experience__title">Desenvolvedor Full-Stack</h3>
-                <span class="experience__company">2025 - Atualmente | Aivia Platforms INC. </span>
+                <h3 class="experience__title">Desenvolvedor Full-Stack | AI Products</h3>
+                <span class="experience__company">2024 - 2026 | Hyperfy (Aivia Platforms INC.)</span>
                 <p class="experience__description">
-                  Desenvolvimento de SaaS de IA com arquitetura multi-tenant, implementando serviços de chat,
-                  geração de imagens e agentes inteligentes. Utilizando Next.js 14 (App Router), TypeScript,
-                  RSC, e Vercel AI SDK para integração com modelos de linguagem. Interfaces com Tailwind CSS, Shadcn UI
-                  e Radix UI, seguindo princípios de design responsivo e
-                  acessibilidade.
+                  • Atuei como principal desenvolvedor de plataforma white-label AI SaaS, com ownership end-to-end de
+                  arquitetura, implementação e operação.<br>
+                  • Arquitetei sistema multi-tenant com roteamento por subdomínio, custom domains e propagação de
+                  contexto via Edge Middleware.<br>
+                  • Implementei billing completo com Stripe (Subscriptions + Connect), incluindo webhooks e
+                  reconciliação automatizada.<br>
+                  • Integrei LLMs em produção (OpenAI, Anthropic, Google) com streaming multimodal via Vercel AI
+                  SDK.<br>
+                  • Orquestrei e padronizei agentes e workflows configuráveis com LangChain/LangGraph para automações e
+                  integrações externas.<br>
+                  • Padronizei observabilidade (Sentry + PostHog) e segurança (criptografia AES-256 por usuário).
                 </p>
               </div>
             </div>
@@ -218,9 +230,8 @@
                 <h3 class="experience__title">Desenvolvedor Front-End PL</h3>
                 <span class="experience__company">2023 - 2024 | GSS - Impact Development Company </span>
                 <p class="experience__description">
-                  Desenvolvimento de soluções especializadas para a empresa. Utilizando
-                  Next.js, TypeScript, Styled-Components como principais tecnologias, e também AWS, Azure, Docker,
-                  MongoDB e bibliotecas de interfaces como MUI e Shadcn.
+                  Desenvolvimento de aplicações web para clientes corporativos utilizando Next.js e TypeScript.
+                  Atuação em integrações com APIs e padronização de componentes de interface.
                 </p>
               </div>
             </div>
@@ -234,9 +245,7 @@
                 <h3 class="experience__title">Estagiário Front-End</h3>
                 <span class="experience__company">2021 - 2022 | The Foursales Company</span>
                 <p class="experience__description">
-                  Desenvolvimento de features, resolução de bugs e acompanhamento Front-End no sistema de consultoria,
-                  recrutamento e seleção, utilizando React, TypeScript, SASS,
-                  Redux, e Redux-saga.
+                  Desenvolvimento e manutenção de features em sistema web, utilizando React e TypeScript.
                 </p>
               </div>
             </div>
@@ -250,8 +259,7 @@
                 <h3 class="experience__title">Estagiário de T.I</h3>
                 <span class="experience__company">2021 | SCPAR Porto de Imbituba</span>
                 <p class="experience__description">
-                  Auxílio técnico, manutenção e reparo de computadores, redes e sistemas. Desenvolvimento de sistemas de
-                  automação, tais como cadastro de fornecedores e filtragem de contratações.
+                  Suporte técnico e desenvolvimento de pequenas automações internas.
                 </p>
               </div>
             </div>
@@ -264,8 +272,7 @@
                 <h3 class="experience__title">Designer gráfico</h3>
                 <span class="experience__company">2019 | Freelancer </span>
                 <p class="experience__description">
-                  Desenvolvimento de projetos gráficos e de cunho visual, panfletos, cartões de visita, logos e design
-                  de produtos.
+                  Desenvolvimento de projetos gráficos e identidade visual como freelancer.
                 </p>
               </div>
             </div>
@@ -276,31 +283,15 @@
         <!-- ========================================================== -->
         <section class="skills section" id="skills">
           <h2 class="section-title">Habilidades</h2>
-          <div class="skills__container container">
-            <p class="skills__skill-title">React</p>
-
-            <p class="skills__skill-title">React Native</p>
-
-            <p class="skills__skill-title">Redux e Redux-saga</p>
-
-            <p class="skills__skill-title">Azure/AWS</p>
-
-            <p class="skills__skill-title">MongoDB</p>
-
-            <p class="skills__skill-title">Docker</p>
-
-            <p class="skills__skill-title">SASS</p>
-
-            <p class="skills__skill-title">Styled-components </p>
-
-            <p class="skills__skill-title">TailwindCSS</p>
-
-            <p class="skills__skill-title">Mui e Shadcn</p>
-
-            <p class="skills__skill-title">Adobe Photoshop</p>
-
-            <p class="skills__skill-title">Adobe Illustrator</p>
-
+          <div class="skills__container skills__container--categories">
+            <p class="skills__skill-title"><strong>AI/LLM:</strong>&nbsp;Vercel AI SDK, LangChain, LangGraph, OpenAI,
+              Anthropic, Google AI</p>
+            <p class="skills__skill-title"><strong>Backend:</strong>&nbsp;Node.js, Stripe API, Supabase, PostgreSQL,
+              Webhooks</p>
+            <p class="skills__skill-title"><strong>Frontend:</strong>&nbsp;React, Next.js, TypeScript, Tailwind CSS,
+              shadcn/ui, MUI, Emotion, Styled-components</p>
+            <p class="skills__skill-title"><strong>Infra:</strong>&nbsp;Vercel, Docker, Git, CI/CD</p>
+            <p class="skills__skill-title"><strong>Observabilidade:</strong>&nbsp;Sentry, PostHog</p>
           </div>
         </section>
 
@@ -313,7 +304,7 @@
                 <h3 class="references__title">Movie Roll</h3>
               </a>
               <span class="references__contact">
-                Aplicativo de filmes utilizando NextJS + TypeScript, com consumo de API TMDB.
+                Aplicação web em Next.js com integração a API externa e deploy.
               </span>
             </div>
             <!-- =================================================================== -->
@@ -321,28 +312,9 @@
               <a href="https://github.com/Elesiann/supp.li" target="_blank">
                 <h3 class="references__title">Supp.li</h3>
               </a>
-              <span class="references__contact">Uma SPA com autenticação para gerenciamento simplificado de
-                fornecedores. <br>
-                Utilizando
-                React, Typescript, Firebase, Mantine e Styled Components</span>
+              <span class="references__contact">SPA com autenticação e gerenciamento de dados utilizando React e
+                Firebase.</span>
             </div>
-            <!-- =================================================================== -->
-            <div class="references__content bd-grid" target="_blank">
-              <a href="https://minglecoffee.vercel.app/">
-                <h3 class="references__title">Mingle Coffee</h3>
-              </a>
-              <span class="references__contact"> Cafeteria virtual utilizando NextJS + Typescript como projeto de
-                TCC.</span>
-            </div>
-            <!-- =================================================================== -->
-            <div class="references__content bd-grid">
-              <a href="https://github.com/Elesiann/projeto-rh" target="_blank">
-                <h3 class="references__title">Filtragens de contratações</h3>
-              </a>
-              <span class="references__contact"> Projeto de cadastro e filtragem de contratações para o RH SCPAR Porto
-                de Imbituba.</span>
-            </div>
-
           </div>
         </section>
 

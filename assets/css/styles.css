@@ -59,7 +59,7 @@ body.dark-theme {
 /* ========================= BUTTON DARK/LIGHT ========================= */
 .change-theme {
   position: absolute;
-  right: -0.5rem;
+  right: 1rem;
   top: 2rem;
   display: flex;
   color: var(--text-color);
@@ -87,11 +87,32 @@ body.scale-cv {
   font-size: 1.4rem;
   cursor: pointer;
   color: var(--title-color);
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+/* ========================= LANGUAGE SWITCH BUTTON ========================= */
+.change-lang {
+  position: absolute;
+  right: -1.2rem;
+  top: 2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.change-lang:hover {
+  color: var(--title-color);
 }
 
 /* ========================== CLASSES MODIFIED TO REDUCE SIZE AND PRINT ON A4 SHEET ========================= */
 .scale-cv .change-theme,
-.scane-cv .generate-pdf {
+.scale-cv .change-lang,
+.scale-cv .generate-pdf {
   display: none;
 }
 
@@ -133,7 +154,7 @@ body.scale-cv {
 }
 
 .scale-cv .qualities__content {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
 }
 
 .scale-cv .home__container {
@@ -181,7 +202,7 @@ body.scale-cv {
 
 .scale-cv .experience__line {
   width: 2px;
-  height: 105%;
+  height: 130%;
   margin-left: 5px;
 }
 
@@ -328,6 +349,14 @@ img {
 }
 
 @media screen and (max-width: 968px) {
+  .l-header {
+    display: none;
+  }
+
+  body {
+    margin-bottom: 0;
+  }
+
   .nav__menu {
     position: fixed;
     bottom: -100%;
@@ -495,10 +524,6 @@ img {
   text-align: justify;
 }
 
-/* ============================== EDUCATION ============================== */
-
-#education {}
-
 .span_infinite {
   transform: rotate(-45deg);
 }
@@ -584,11 +609,12 @@ img {
   display: inline-flex;
   align-items: center;
   color: var(--text-color);
+  font-size: 0.85rem;
 }
 
 .qualities__icon {
   margin-right: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* ===================================== SKILLS =====================================  */
@@ -610,6 +636,46 @@ img {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+}
+
+.skills__container--categories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.skills__container--categories .skills__skill-title {
+  margin-top: 0;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.skills__container--categories .skills__skill-title strong {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 968px) {
+  .skills__container--categories {
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 0.5rem;
+  }
+
+  .skills__container--categories .skills__skill-title {
+    font-size: 0.8rem;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  .skills__container--categories .skills__skill-title strong {
+    white-space: normal;
+    word-break: break-word;
+  }
 }
 
 /* ================================== SKILL BARS ================================== */
