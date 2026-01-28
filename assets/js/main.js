@@ -165,7 +165,7 @@ let resumeButton = document.getElementById("resume-button");
 // Html2pdf options - optimized for smaller file size
 let opt = {
   margin: 0,
-  filename: "CV-Giovani-M-Correa.pdf",
+  filename: "cvGiovaniMachado.pdf",
   image: { type: "jpeg", quality: 0.85 },
   html2canvas: { scale: 2, useCORS: true, logging: false },
   jsPDF: { format: "a4", orientation: "portrait", compress: true }

@@ -82,6 +82,24 @@ const i18n = {
 
         // Handle bullet lists (experience with multiple bullets)
         this.applyBulletLists();
+
+        // Update CV download link based on language
+        this.updateCvDownloadLink();
+    },
+
+    /**
+     * Update the CV download link based on current language
+     * Portuguese: cvGiovaniMachado.pdf
+     * English: en-cvGiovaniMachado.pdf
+     */
+    updateCvDownloadLink() {
+        const resumeButton = document.getElementById('resumeButton');
+        if (resumeButton) {
+            const cvPath = this.currentLang === 'en'
+                ? './assets/pdf/en-cvGiovaniMachado.pdf'
+                : './assets/pdf/cvGiovaniMachado.pdf';
+            resumeButton.setAttribute('href', cvPath);
+        }
     },
 
     /**
