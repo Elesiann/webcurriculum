@@ -106,8 +106,8 @@ const selectedIcon = localStorage.getItem("selected-icon");
 const profileImage = document.getElementById("profileImage");
 
 const imageUrls = {
-  profilePicture: "/assets/img/2.jpg",
-  profileDarkPicture: "/assets/img/2.jpg"
+  profilePicture: "/assets/img/pp.jpg",
+  profileDarkPicture: "/assets/img/pp.jpg"
 };
 
 // We obtain the current theme that the interface has by validating the dark-theme class
