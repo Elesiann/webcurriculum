@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "title": "Curriculum | Giovani M. Corrêa",
+    "lang": "pt-BR"
+  },
+  "nav": {
+    "home": "Home",
+    "profile": "Perfil",
+    "education": "Formação",
+    "qualities": "Qualidades",
+    "experience": "Experiência",
+    "references": "Referências",
+    "skills": "Habilidades"
+  },
+  "home": {
+    "downloadCV": "Baixar meu CV",
+    "profileAlt": "Foto de perfil"
+  },
+  "sections": {
+    "contact": "Contato",
+    "social": "Social",
+    "aboutMe": "Sobre mim",
+    "education": "Educação",
+    "qualities": "Qualidades",
+    "experience": "Experiência profissional",
+    "skills": "Habilidades",
+    "projects": "Projetos"
+  },
+  "profile": {
+    "description": "Desenvolvedor Full-Stack com aproximadamente 5 anos de experiência, atuando entre front-end, back-end e integrações. Tenho uma abordagem metódica e organizada, valorizo boas decisões de arquitetura e busco constantemente aprimorar a qualidade e a evolução dos sistemas que construí."
+  },
+  "education": {
+    "degree": "Graduação em Ciência da Computação",
+    "university": "Universidade Cruzeiro do Sul",
+    "year": "2019 - 2023"
+  },
+  "qualities": {
+    "english": "Inglês proficiente (leitura, escrita, conversação)",
+    "ownership": "Ownership end-to-end de features e sistemas",
+    "debugging": "Debugging e troubleshooting em produção",
+    "codeReview": "Code review e padronização técnica",
+    "communication": "Comunicação técnica clara",
+    "documentation": "Documentação de arquitetura e decisões"
+  },
+  "experience": {
+    "job1": {
+      "title": "Desenvolvedor Full-Stack | AI Products",
+      "company": "2024 - 2026 | Hyperfy (Aivia Platforms INC.)",
+      "bullets": [
+        "Atuei como principal desenvolvedor de plataforma white-label AI SaaS, com ownership end-to-end de arquitetura, implementação e operação.",
+        "Arquitetei sistema multi-tenant com roteamento por subdomínio, custom domains e propagação de contexto via Edge Middleware.",
+        "Implementei billing completo com Stripe (Subscriptions + Connect), incluindo webhooks e reconciliação automatizada.",
+        "Integrei LLMs em produção (OpenAI, Anthropic, Google) com streaming multimodal via Vercel AI SDK.",
+        "Orquestrei e padronizei agentes e workflows configuráveis com LangChain/LangGraph para automações e integrações externas.",
+        "Padronizei observabilidade (Sentry + PostHog) e segurança (criptografia AES-256 por usuário)."
+      ]
+    },
+    "job2": {
+      "title": "Desenvolvedor Front-End PL",
+      "company": "2023 - 2024 | GSS - Impact Development Company",
+      "description": "Desenvolvimento de aplicações web para clientes corporativos utilizando Next.js e TypeScript. Atuação em integrações com APIs e padronização de componentes de interface."
+    },
+    "job3": {
+      "title": "Estagiário Front-End",
+      "company": "2021 - 2022 | The Foursales Company",
+      "description": "Desenvolvimento e manutenção de features em sistema web, utilizando React e TypeScript."
+    },
+    "job4": {
+      "title": "Estagiário de T.I",
+      "company": "2021 | SCPAR Porto de Imbituba",
+      "description": "Suporte técnico e desenvolvimento de pequenas automações internas."
+    },
+    "job5": {
+      "title": "Designer gráfico",
+      "company": "2019 | Freelancer",
+      "description": "Desenvolvimento de projetos gráficos e identidade visual como freelancer."
+    }
+  },
+  "skills": {
+    "aiLlm": {
+      "label": "AI/LLM:",
+      "items": "Vercel AI SDK, LangChain, LangGraph, OpenAI, Anthropic, Google AI"
+    },
+    "backend": {
+      "label": "Backend:",
+      "items": "Node.js, Stripe API, Supabase, PostgreSQL, Webhooks"
+    },
+    "frontend": {
+      "label": "Frontend:",
+      "items": "React, Next.js, TypeScript, Tailwind CSS, shadcn/ui, MUI, Emotion, Styled-components"
+    },
+    "infra": {
+      "label": "Infra:",
+      "items": "Vercel, Docker, Git, CI/CD"
+    },
+    "observability": {
+      "label": "Observabilidade:",
+      "items": "Sentry, PostHog"
+    }
+  },
+  "projects": {
+    "movieRoll": {
+      "title": "Movie Roll",
+      "description": "Aplicação web em Next.js com integração a API externa e deploy."
+    },
+    "suppli": {
+      "title": "Supp.li",
+      "description": "SPA com autenticação e gerenciamento de dados utilizando React e Firebase."
+    }
+  },
+  "footer": {
+    "madeWith": "Feito com ❤️ por Giovani M. Corrêa"
+  },
+  "buttons": {
+    "themeTitle": "Tema",
+    "langTitle": "English version",
+    "pdfTitle": "Gerar PDF"
+  }
+}

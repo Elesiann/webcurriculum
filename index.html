@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curriculum | Giovani M. Corrêa</title>
+  <title data-i18n="meta.title">Curriculum | Giovani M. Corrêa</title>
 
   <!-- ==================== REMIX ICONS ==================== -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -14,7 +14,7 @@
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 
   <!-- ==================== CSS ====================  -->
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
@@ -26,43 +26,43 @@
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#home" class="nav__link active-link">
-              <i class="bx bx-home nav__icon"></i> Home
+              <i class="bx bx-home nav__icon"></i> <span data-i18n="nav.home">Home</span>
             </a>
           </li>
 
           <li class="nav__item">
             <a href="#social" class="nav__link">
-              <i class="bx bx-user nav__icon"></i> Perfil
+              <i class="bx bx-user nav__icon"></i> <span data-i18n="nav.profile">Perfil</span>
             </a>
           </li>
 
           <li class="nav__item">
             <a href="#education" class="nav__link">
-              <i class="bx bxs-school nav__icon"></i> Formação
+              <i class="bx bxs-school nav__icon"></i> <span data-i18n="nav.education">Formação</span>
             </a>
           </li>
 
           <li class="nav__item">
             <a href="#qualities" class="nav__link">
-              <i class="bx bx-wink-smile nav__icon"></i> Qualidades
+              <i class="bx bx-wink-smile nav__icon"></i> <span data-i18n="nav.qualities">Qualidades</span>
             </a>
           </li>
 
           <li class="nav__item">
             <a href="#experience" class="nav__link">
-              <i class="bx bx-briefcase-alt nav__icon"></i> Experiência
+              <i class="bx bx-briefcase-alt nav__icon"></i> <span data-i18n="nav.experience">Experiência</span>
             </a>
           </li>
 
           <li class="nav__item">
             <a href="#references" class="nav__link">
-              <i class="bx bx-link-external nav__icon"></i> Referências
+              <i class="bx bx-link-external nav__icon"></i> <span data-i18n="nav.references">Referências</span>
             </a>
           </li>
 
           <li class="nav__item">
             <a href="#skills" class="nav__link">
-              <i class="bx bx-receipt nav__icon"></i> Habilidades
+              <i class="bx bx-receipt nav__icon"></i> <span data-i18n="nav.skills">Habilidades</span>
             </a>
           </li>
 
@@ -88,22 +88,22 @@
         <section class="home section" id="home">
           <div class="home__container section bd-grid">
             <div class="home__data bd-grid">
-              <img src="/assets/img/pp.jpg" alt="Foto de perfil" class="home__img" id="profileImage" />
+              <img src="./assets/img/pp.jpg" data-i18n-alt="home.profileAlt" alt="Foto de perfil" class="home__img"
+                id="profileImage" />
               <h1 class="home__title"><b>Giovani</b> M. Corrêa</h1>
               <h3 class="home__profession">Full-Stack Developer | AI Products</h3>
 
               <!-- BUTTON TO DOWNLOAD CV IN PDF -->
               <div>
-                <!-- <a href="/assets/pdf/ResumeCV.pdf" download class="home__button-movil">Baixar meu CV</a> -->
-                <a href="/assets/pdf/cvGiovaniMachado.pdf" download id="resumeButton" class="home__button-movil">Baixar
-                  meu CV</a>
+                <a href="./assets/pdf/cvGiovaniMachado.pdf" download id="resumeButton" class="home__button-movil"
+                  data-i18n="home.downloadCV">Baixar meu CV</a>
               </div>
 
             </div>
 
             <div class="home__address">
 
-              <h2 class="section-title">Contato</h2>
+              <h2 class="section-title" data-i18n="sections.contact">Contato</h2>
               <ul class="home__list bd-grid-small">
                 <li class="social__list"> <a
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=giovanicorrea.dev@gmail.com" target="_blank"
@@ -115,34 +115,35 @@
           </div>
 
           <!-- ==================== Theme change button ==================== -->
-          <i class='bx bxs-moon change-theme' title="Theme" id="theme-button"></i>
+          <i class='bx bxs-moon change-theme' data-i18n-title="buttons.themeTitle" title="Tema" id="theme-button"></i>
 
           <!-- ==================== Language switch button ==================== -->
-          <a href="index-en.html" class="bx bx-globe change-lang" title="English version"></a>
+          <a href="#" class="bx bx-globe change-lang" data-i18n-title="buttons.langTitle" title="English version"></a>
 
           <!-- ==================== Button to generate and download pdf ==================== -->
-          <a class="bx bxs-download generate-pdf" title="Generate PDF" id="resume-button"></a>
+          <a href="#" class="bx bxs-download generate-pdf" data-i18n-title="buttons.pdfTitle" title="Gerar PDF"
+            id="resume-button"></a>
 
         </section>
         <!-- ================================================= SOCIAL ======================================================= -->
         <section class="social section" id="social">
-          <h2 class="section-title">Social</h2>
+          <h2 class="section-title" data-i18n="sections.social">Social</h2>
 
           <ul class="social__container bd-grid-small">
 
             <li class="social__list"> <a href="https://www.linkedin.com/in/giovanimachado/" target="_blank"
-                class="social__link"><i class=" bx bxl-linkedin-square social__icon"></i><span>Linkedin</span></a>
+                class="social__link"><i class=" bx bxl-linkedin-square social__icon"></i><span>Linkedin</span></a></li>
             <li class="social__list"> <a href="https://www.behance.net/giovanimachado" target="_blank"
-                class="social__link"><i class=" bx bxl-behance social__icon"></i><span>Behance</span></a>
+                class="social__link"><i class=" bx bxl-behance social__icon"></i><span>Behance</span></a></li>
             <li class="social__list"> <a href="https://github.com/Elesiann" target="_blank" class="social__link"><i
-                  class=" bx bxl-github social__icon"></i> <span>Github</span> </a>
+                  class=" bx bxl-github social__icon"></i> <span>Github</span> </a></li>
           </ul>
 
           <!-- ======================================== PERFIL ======================================== -->
           <section class="profile section">
 
-            <h2 class="section-title">Sobre mim</h2>
-            <p class="profile__description">
+            <h2 class="section-title" data-i18n="sections.aboutMe">Sobre mim</h2>
+            <p class="profile__description" data-i18n="profile.description">
               Desenvolvedor Full-Stack com aproximadamente 5 anos de experiência, atuando entre front-end, back-end e
               integrações.
               Tenho uma abordagem metódica e organizada, valorizo boas decisões de arquitetura e busco constantemente
@@ -154,7 +155,7 @@
         <!-- ======================================== EDUCATION ======================================== -->
         <section class="education section" id="education">
 
-          <h2 class="section-title">Educação</h2>
+          <h2 class="section-title" data-i18n="sections.education">Educação</h2>
           <div class="education__container bd-grid">
             <!--==============================================-->
             <div class="education__content">
@@ -162,29 +163,31 @@
                 <span class="education__rounder"></span>
               </div>
               <div class="education__data bd-grid-small">
-                <h3 class="education__title">Graduação em Ciência da Computação</h3>
-                <span class="education__studies">Universidade Cruzeiro do Sul</span>
-                <span class="education__year">2019 - 2023</span>
+                <h3 class="education__title" data-i18n="education.degree">Graduação em Ciência da Computação</h3>
+                <span class="education__studies" data-i18n="education.university">Universidade Cruzeiro do Sul</span>
+                <span class="education__year" data-i18n="education.year">2019 - 2023</span>
               </div>
             </div>
+          </div>
         </section>
         <!-- ======================================================================================= -->
 
         <!-- ======================================= QUALITIES ================================================ -->
         <section class="qualities section" id="qualities">
-          <h2 class="section-title">Qualidades</h2>
+          <h2 class="section-title" data-i18n="sections.qualities">Qualidades</h2>
           <ul class="qualities__container bd-grid-small">
-            <li class="qualities__content"><i class="ri-speak-line qualities__icon"></i> Inglês proficiente (leitura,
-              escrita, conversação)</li>
-            <li class="qualities__content"><i class="ri-code-s-slash-line qualities__icon"></i> Ownership end-to-end de
-              features e sistemas</li>
-            <li class="qualities__content"><i class="ri-error-warning-line qualities__icon"></i> Debugging e
-              troubleshooting em produção</li>
-            <li class="qualities__content"><i class="ri-git-merge-line qualities__icon"></i> Code review e padronização
-              técnica</li>
-            <li class="qualities__content"><i class="ri-team-line qualities__icon"></i> Comunicação técnica clara</li>
-            <li class="qualities__content"><i class="ri-file-list-3-line qualities__icon"></i> Documentação de
-              arquitetura e decisões</li>
+            <li class="qualities__content"><i class="ri-speak-line qualities__icon"></i> <span
+                data-i18n="qualities.english">Inglês proficiente (leitura, escrita, conversação)</span></li>
+            <li class="qualities__content"><i class="ri-code-s-slash-line qualities__icon"></i> <span
+                data-i18n="qualities.ownership">Ownership end-to-end de features e sistemas</span></li>
+            <li class="qualities__content"><i class="ri-error-warning-line qualities__icon"></i> <span
+                data-i18n="qualities.debugging">Debugging e troubleshooting em produção</span></li>
+            <li class="qualities__content"><i class="ri-git-merge-line qualities__icon"></i> <span
+                data-i18n="qualities.codeReview">Code review e padronização técnica</span></li>
+            <li class="qualities__content"><i class="ri-team-line qualities__icon"></i> <span
+                data-i18n="qualities.communication">Comunicação técnica clara</span></li>
+            <li class="qualities__content"><i class="ri-file-list-3-line qualities__icon"></i> <span
+                data-i18n="qualities.documentation">Documentação de arquitetura e decisões</span></li>
           </ul>
         </section>
         <!-- ======================================================================================= -->
@@ -193,7 +196,7 @@
       <div class="resume__right">
         <!-- ============================================== EXPERIENCE ================================================= -->
         <section class="experience section" id="experience">
-          <h2 class="section-title">Experiência profissional</h2>
+          <h2 class="section-title" data-i18n="sections.experience">Experiência profissional</h2>
           <div class="experience__container bd-grid">
 
             <!-- ============================================================ -->
@@ -203,20 +206,22 @@
                 <span class="experience__line-1"></span>
               </div>
               <div class="experience__data bd-grid">
-                <h3 class="experience__title">Desenvolvedor Full-Stack | AI Products</h3>
-                <span class="experience__company">2024 - 2026 | Hyperfy (Aivia Platforms INC.)</span>
-                <ul class="experience__description" style="list-style-type: disc; padding-left: 1rem;">
+                <h3 class="experience__title" data-i18n="experience.job1.title">Desenvolvedor Full-Stack | AI Products
+                </h3>
+                <span class="experience__company" data-i18n="experience.job1.company">2024 - 2026 | Hyperfy (Aivia
+                  Platforms INC.)</span>
+                <ul class="experience__description" style="list-style-type: disc; padding-left: 1rem;"
+                  data-i18n-bullets="experience.job1.bullets">
                   <li>Atuei como principal desenvolvedor de plataforma white-label AI SaaS, com ownership end-to-end de
                     arquitetura, implementação e operação.</li>
                   <li>Arquitetei sistema multi-tenant com roteamento por subdomínio, custom domains e propagação de
                     contexto via Edge Middleware.</li>
                   <li>Implementei billing completo com Stripe (Subscriptions + Connect), incluindo webhooks e
                     reconciliação automatizada.</li>
-                  <li>Integrei LLMs em produção (OpenAI, Anthropic, Google) com streaming multimodal via Vercel AI
-                    SDK.</li>
+                  <li>Integrei LLMs em produção (OpenAI, Anthropic, Google) com streaming multimodal via Vercel AI SDK.
+                  </li>
                   <li>Orquestrei e padronizei agentes e workflows configuráveis com LangChain/LangGraph para automações
-                    e
-                    integrações externas.</li>
+                    e integrações externas.</li>
                   <li>Padronizei observabilidade (Sentry + PostHog) e segurança (criptografia AES-256 por usuário).</li>
                 </ul>
               </div>
@@ -228,9 +233,10 @@
                 <span class="experience__line-1"></span>
               </div>
               <div class="experience__data bd-grid">
-                <h3 class="experience__title">Desenvolvedor Front-End PL</h3>
-                <span class="experience__company">2023 - 2024 | GSS - Impact Development Company </span>
-                <p class="experience__description">
+                <h3 class="experience__title" data-i18n="experience.job2.title">Desenvolvedor Front-End PL</h3>
+                <span class="experience__company" data-i18n="experience.job2.company">2023 - 2024 | GSS - Impact
+                  Development Company</span>
+                <p class="experience__description" data-i18n="experience.job2.description">
                   Desenvolvimento de aplicações web para clientes corporativos utilizando Next.js e TypeScript.
                   Atuação em integrações com APIs e padronização de componentes de interface.
                 </p>
@@ -243,9 +249,10 @@
                 <span class="experience__line-1"></span>
               </div>
               <div class="experience__data bd-grid">
-                <h3 class="experience__title">Estagiário Front-End</h3>
-                <span class="experience__company">2021 - 2022 | The Foursales Company</span>
-                <p class="experience__description">
+                <h3 class="experience__title" data-i18n="experience.job3.title">Estagiário Front-End</h3>
+                <span class="experience__company" data-i18n="experience.job3.company">2021 - 2022 | The Foursales
+                  Company</span>
+                <p class="experience__description" data-i18n="experience.job3.description">
                   Desenvolvimento e manutenção de features em sistema web, utilizando React e TypeScript.
                 </p>
               </div>
@@ -257,9 +264,10 @@
                 <span class="experience__line"></span>
               </div>
               <div class="experience__data bd-grid">
-                <h3 class="experience__title">Estagiário de T.I</h3>
-                <span class="experience__company">2021 | SCPAR Porto de Imbituba</span>
-                <p class="experience__description">
+                <h3 class="experience__title" data-i18n="experience.job4.title">Estagiário de T.I</h3>
+                <span class="experience__company" data-i18n="experience.job4.company">2021 | SCPAR Porto de
+                  Imbituba</span>
+                <p class="experience__description" data-i18n="experience.job4.description">
                   Suporte técnico e desenvolvimento de pequenas automações internas.
                 </p>
               </div>
@@ -270,9 +278,9 @@
                 <span class="experience__rounder"></span>
               </div>
               <div class="experience__data bd-grid">
-                <h3 class="experience__title">Designer gráfico</h3>
-                <span class="experience__company">2019 | Freelancer </span>
-                <p class="experience__description">
+                <h3 class="experience__title" data-i18n="experience.job5.title">Designer gráfico</h3>
+                <span class="experience__company" data-i18n="experience.job5.company">2019 | Freelancer</span>
+                <p class="experience__description" data-i18n="experience.job5.description">
                   Desenvolvimento de projetos gráficos e identidade visual como freelancer.
                 </p>
               </div>
@@ -283,38 +291,43 @@
 
         <!-- ========================================================== -->
         <section class="skills section" id="skills">
-          <h2 class="section-title">Habilidades</h2>
+          <h2 class="section-title" data-i18n="sections.skills">Habilidades</h2>
           <div class="skills__container skills__container--categories">
-            <p class="skills__skill-title"><strong>AI/LLM:</strong>&nbsp;Vercel AI SDK, LangChain, LangGraph, OpenAI,
-              Anthropic, Google AI</p>
-            <p class="skills__skill-title"><strong>Backend:</strong>&nbsp;Node.js, Stripe API, Supabase, PostgreSQL,
-              Webhooks</p>
-            <p class="skills__skill-title"><strong>Frontend:</strong>&nbsp;React, Next.js, TypeScript, Tailwind CSS,
-              shadcn/ui, MUI, Emotion, Styled-components</p>
-            <p class="skills__skill-title"><strong>Infra:</strong>&nbsp;Vercel, Docker, Git, CI/CD</p>
-            <p class="skills__skill-title"><strong>Observabilidade:</strong>&nbsp;Sentry, PostHog</p>
+            <p class="skills__skill-title"><strong data-i18n="skills.aiLlm.label">AI/LLM:</strong>&nbsp;<span
+                data-i18n="skills.aiLlm.items">Vercel AI SDK, LangChain, LangGraph, OpenAI, Anthropic, Google AI</span>
+            </p>
+            <p class="skills__skill-title"><strong data-i18n="skills.backend.label">Backend:</strong>&nbsp;<span
+                data-i18n="skills.backend.items">Node.js, Stripe API, Supabase, PostgreSQL, Webhooks</span></p>
+            <p class="skills__skill-title"><strong data-i18n="skills.frontend.label">Frontend:</strong>&nbsp;<span
+                data-i18n="skills.frontend.items">React, Next.js, TypeScript, Tailwind CSS, shadcn/ui, MUI, Emotion,
+                Styled-components</span></p>
+            <p class="skills__skill-title"><strong data-i18n="skills.infra.label">Infra:</strong>&nbsp;<span
+                data-i18n="skills.infra.items">Vercel, Docker, Git, CI/CD</span></p>
+            <p class="skills__skill-title"><strong
+                data-i18n="skills.observability.label">Observabilidade:</strong>&nbsp;<span
+                data-i18n="skills.observability.items">Sentry, PostHog</span></p>
           </div>
         </section>
 
         <!-- ============================= REFERENCES ============================= -->
         <section class="references section" id="references">
-          <h2 class="section-title">Projetos</h2>
+          <h2 class="section-title" data-i18n="sections.projects">Projetos</h2>
           <div class="references__container bd-grid">
             <div class="references__content bd-grid">
               <a href="https://movie-roll.vercel.app/" target="_blank">
-                <h3 class="references__title">Movie Roll</h3>
+                <h3 class="references__title" data-i18n="projects.movieRoll.title">Movie Roll</h3>
               </a>
-              <span class="references__contact">
+              <span class="references__contact" data-i18n="projects.movieRoll.description">
                 Aplicação web em Next.js com integração a API externa e deploy.
               </span>
             </div>
             <!-- =================================================================== -->
             <div class="references__content bd-grid">
               <a href="https://github.com/Elesiann/supp.li" target="_blank">
-                <h3 class="references__title">Supp.li</h3>
+                <h3 class="references__title" data-i18n="projects.suppli.title">Supp.li</h3>
               </a>
-              <span class="references__contact">SPA com autenticação e gerenciamento de dados utilizando React e
-                Firebase.</span>
+              <span class="references__contact" data-i18n="projects.suppli.description">SPA com autenticação e
+                gerenciamento de dados utilizando React e Firebase.</span>
             </div>
           </div>
         </section>
@@ -326,7 +339,7 @@
   </main>
   <!-- ================================== FOOTER ==================================-->
   <footer class="footer" id="footer">
-    <p class="footer__description"> Made with ❤️ by Giovani M. Corrêa </p>
+    <p class="footer__description" data-i18n="footer.madeWith"> Made with ❤️ by Giovani M. Corrêa </p>
   </footer>
 
   <!-- ===================================================== SCROLL TOP ===================================================== -->
@@ -335,12 +348,16 @@
   </a>
 
   <!-- ===================================================== HTML2PDF ===================================================== -->
-  <script src="/assets/js/html2pdf.bundle.min.js"></script>
+  <script src="./assets/js/html2pdf.bundle.min.js"></script>
 
   <!-- ===================================================== SCROLL REVEAL ===================================================== -->
   <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- ===================================================== I18N ===================================================== -->
+  <script src="./assets/js/i18n.js"></script>
+
   <!-- ===================================================== MAIN JS ===================================================== -->
-  <script src="/assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
