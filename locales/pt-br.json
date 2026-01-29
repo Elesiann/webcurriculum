@@ -99,13 +99,13 @@
     }
   },
   "projects": {
+    "planify": {
+      "title": "Planify",
+      "description": "App de finanças domésticas com divisão inteligente de gastos, dashboard analítico e gestão de despesas fixas. React, TypeScript e Supabase."
+    },
     "movieRoll": {
       "title": "Movie Roll",
       "description": "Aplicação web em Next.js com integração a API externa e deploy."
-    },
-    "suppli": {
-      "title": "Supp.li",
-      "description": "SPA com autenticação e gerenciamento de dados utilizando React e Firebase."
     }
   },
   "footer": {

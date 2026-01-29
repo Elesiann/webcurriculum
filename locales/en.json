@@ -99,13 +99,13 @@
     }
   },
   "projects": {
+    "planify": {
+      "title": "Planify",
+      "description": "Household finance app with smart expense splitting, analytics dashboard, and fixed expense management. React, TypeScript, and Supabase."
+    },
     "movieRoll": {
       "title": "Movie Roll",
       "description": "Next.js web application with external API integration and deployment."
-    },
-    "suppli": {
-      "title": "Supp.li",
-      "description": "SPA with authentication and data management using React and Firebase."
     }
   },
   "footer": {
