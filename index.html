@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      data-i18n-meta="description"
       content="Giovani Machado: software developer, product thinker, and a few opinions about building useful systems."
     />
     <title>Giovani Machado</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <script src="./assets/js/i18n.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./i18n.js" defer></script>
   </head>
 
   <body>
     <main class="page">
-      <header class="intro" aria-labelledby="name">
-        <h1 id="name" class="name">
+      <header>
+        <h1 id="name">
           <span>Giovani Machado</span>
           <button
             class="lang-toggle"
@@ -44,31 +43,29 @@
           </button>
         </h1>
       </header>
-      <section aria-labelledby="about-title">
-        <h2 id="about-title" data-i18n="sections.about">
-          Some things about me:
-        </h2>
+      <section>
+        <h2 data-i18n="sections-about">Some things about me:</h2>
         <ul>
           <li>
-            <span data-i18n="about.stack">
+            <span data-i18n="about-stack">
               I build mostly with TypeScript, React, Next.js, Node.js,
               PostgreSQL, and whatever else the problem needs.
             </span>
           </li>
           <li>
-            <span data-i18n="about.scope">
+            <span data-i18n="about-scope">
               I have worked across frontend, backend, integrations, billing,
               observability, and AI product systems.
             </span>
           </li>
           <li>
-            <span data-i18n="about.product">
+            <span data-i18n="about-product">
               I like being close to the product decision, not only the
               implementation ticket.
             </span>
           </li>
           <li>
-            <span data-i18n="about.craft">
+            <span data-i18n="about-craft">
               I care about product clarity, debugging discipline, boring
               infrastructure, and interfaces that do not make the user feel
               stupid.
@@ -77,114 +74,114 @@
         </ul>
       </section>
 
-      <section aria-labelledby="beliefs-title">
-        <h2 id="beliefs-title" data-i18n="sections.beliefs">
+      <section>
+        <h2 data-i18n="sections-beliefs">
           A few opinions I'd defend at a bar:
         </h2>
         <ul>
           <li>
-            <span data-i18n="beliefs.requirements">
+            <span data-i18n="beliefs-requirements">
               Requirements are answers. Find the question first.
             </span>
             <ul>
-              <li data-i18n="beliefs.requirementsA">
+              <li data-i18n="beliefs-requirementsA">
                 A requirement is usually someone else's solution.
               </li>
-              <li data-i18n="beliefs.requirementsB">
-                Find the problem inside it.
+              <li data-i18n="beliefs-requirementsB">
+                Treating the ask as final is how you build the wrong thing precisely.
               </li>
             </ul>
           </li>
           <li>
-            <span data-i18n="beliefs.tradeoff">
+            <span data-i18n="beliefs-tradeoff">
               If you cannot explain the trade-off, the decision is not made yet.
             </span>
             <ul>
-              <li data-i18n="beliefs.tradeoffA">
+              <li data-i18n="beliefs-tradeoffA">
                 "Best practice" is not an argument.
               </li>
-              <li data-i18n="beliefs.tradeoffB">
+              <li data-i18n="beliefs-tradeoffB">
                 If nothing got worse, you probably avoided the decision.
               </li>
-              <li data-i18n="beliefs.tradeoffC">
+              <li data-i18n="beliefs-tradeoffC">
                 Good architecture chooses the compromise on purpose.
               </li>
             </ul>
           </li>
           <li>
-            <span data-i18n="beliefs.simple">
+            <span data-i18n="beliefs-simple">
               Simple is a result, not a starting point.
             </span>
             <ul>
-              <li data-i18n="beliefs.simpleA">
+              <li data-i18n="beliefs-simpleA">
                 Moving work out of sight is not removing it.
               </li>
-              <li data-i18n="beliefs.simpleB">
+              <li data-i18n="beliefs-simpleB">
                 A process can look cleaner from the desk and feel worse at the
                 door.
               </li>
-              <li data-i18n="beliefs.simpleC">
+              <li data-i18n="beliefs-simpleC">
                 Simplicity is measured across the whole loop.
               </li>
             </ul>
           </li>
           <li>
-            <span data-i18n="beliefs.measuring">
+            <span data-i18n="beliefs-measuring">
               If you are not measuring, you are guessing.
             </span>
             <ul>
-              <li data-i18n="beliefs.measuringA">
+              <li data-i18n="beliefs-measuringA">
                 Taste without feedback decays into preference.
               </li>
-              <li data-i18n="beliefs.measuringB">
+              <li data-i18n="beliefs-measuringB">
                 Reality is a better reviewer than consensus.
               </li>
-              <li data-i18n="beliefs.measuringC">
+              <li data-i18n="beliefs-measuringC">
                 If the system cannot explain what happened, it is not done.
               </li>
             </ul>
           </li>
           <li>
-            <span data-i18n="beliefs.aiProducts">
+            <span data-i18n="beliefs-aiProducts">
               AI products still have to be products.
             </span>
             <ul>
-              <li data-i18n="beliefs.aiProductsA">
+              <li data-i18n="beliefs-aiProductsA">
                 Good automation removes work instead of adding a new ritual.
               </li>
-              <li data-i18n="beliefs.aiProductsB">
+              <li data-i18n="beliefs-aiProductsB">
                 Models are capabilities, not products.
               </li>
-              <li data-i18n="beliefs.aiProductsC">
+              <li data-i18n="beliefs-aiProductsC">
                 A smart model can still be useless in a workflow.
               </li>
             </ul>
           </li>
           <li>
-            <span data-i18n="beliefs.taste">
+            <span data-i18n="beliefs-taste">
               Taste is a technical advantage.
             </span>
             <ul>
-              <li data-i18n="beliefs.tasteA">
+              <li data-i18n="beliefs-tasteA">
                 It helps you delete earlier.
               </li>
-              <li data-i18n="beliefs.tasteB">
+              <li data-i18n="beliefs-tasteB">
                 It makes the useful path obvious.
               </li>
-              <li data-i18n="beliefs.tasteC">
+              <li data-i18n="beliefs-tasteC">
                 Taste is saying no before the user has to.
               </li>
             </ul>
           </li>
           <li>
-            <span data-i18n="beliefs.shipping">
+            <span data-i18n="beliefs-shipping">
               Shipping fast is not about typing fast.
             </span>
             <ul>
-              <li data-i18n="beliefs.shippingA">
+              <li data-i18n="beliefs-shippingA">
                 You learn more per unit time.
               </li>
-              <li data-i18n="beliefs.shippingB">
+              <li data-i18n="beliefs-shippingB">
                 Reality gets a vote sooner.
               </li>
             </ul>
@@ -192,35 +189,33 @@
         </ul>
       </section>
 
-      <section aria-labelledby="work-title">
-        <h2 id="work-title" data-i18n="sections.work">
-          Some work I keep around:
-        </h2>
+      <section>
+        <h2 data-i18n="sections-work">Some work I keep around:</h2>
         <ul>
           <li>
             <a href="https://giovelyn.vercel.app/">Planify</a>:
-            <span data-i18n="work.planify">
+            <span data-i18n="work-planify">
               household finance app with expense splitting, fixed expenses, and
               an analytical dashboard.
             </span>
           </li>
           <li>
             <a href="https://github.com/Elesiann/vertice">Vertice</a>:
-            <span data-i18n="work.vertice">
+            <span data-i18n="work-vertice">
               a Brazilian credit card recommender that ranks cards by projected
               12-month net return for a spending and investment profile.
             </span>
           </li>
           <li>
             <a href="https://github.com/Elesiann/cc-cockpit">cc-cockpit</a>:
-            <span data-i18n="work.ccCockpit">
+            <span data-i18n="work-ccCockpit">
               a local cockpit for keeping AI coding work visible and easier to
               steer.
             </span>
           </li>
           <li>
             <a href="https://github.com/Elesiann/scribe">Scribe</a>:
-            <span data-i18n="work.scribe">
+            <span data-i18n="work-scribe">
               tooling for turning rough context into more durable written
               artifacts.
             </span>
@@ -229,18 +224,18 @@
       </section>
 
       <section>
+        <h2 data-i18n="elsewhere-label">Elsewhere:</h2>
         <ul>
           <li>
-            <span data-i18n="elsewhere.label">Elsewhere:</span>
             <a href="https://github.com/Elesiann">GitHub</a>,
             <a href="https://www.linkedin.com/in/giovanimachado/">LinkedIn</a>,
             <a href="mailto:giovanicorrea.dev@gmail.com">email</a>.
             <a
               class="cv-link"
-              href="./assets/pdf/en_cv_giovani_machado_correa.pdf"
+              href="./cv/en_cv_giovani_machado_correa.pdf"
               download="en_cv_giovani_machado_correa.pdf"
               data-cv-link
-              data-i18n="elsewhere.cv"
+              data-i18n="elsewhere-cv"
               >Download CV</a
             >
           </li>
@@ -248,7 +243,7 @@
       </section>
 
       <footer>
-        <p data-i18n="footer.quote">
+        <p data-i18n="footer-quote">
           "You cannot create experience. You must undergo it."
         </p>
       </footer>
